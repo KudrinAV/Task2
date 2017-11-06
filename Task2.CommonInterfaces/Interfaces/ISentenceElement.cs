@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Task2.CommonInterfaces.Interfaces
 {
-    class ISentenceElement
+    public interface ISentenceElement
     {
+        String Value { get; }
     }
 }
