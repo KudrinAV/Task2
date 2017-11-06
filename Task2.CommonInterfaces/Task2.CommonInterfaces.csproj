@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParserInterfaces\IParser.cs" />
     <Compile Include="TextObjectsInterfaces\IPunctuationMark.cs" />
     <Compile Include="TextObjectsInterfaces\ISentence.cs" />
     <Compile Include="TextObjectsInterfaces\ISentenceElement.cs" />
@@ -57,8 +58,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ParserInterfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
