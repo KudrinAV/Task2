@@ -48,6 +48,7 @@
     <Compile Include="Interfaces\IPunctuationMark.cs" />
     <Compile Include="Interfaces\ISentence.cs" />
     <Compile Include="Interfaces\ISentenceElement.cs" />
+    <Compile Include="Interfaces\IText.cs" />
     <Compile Include="Interfaces\IWord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
