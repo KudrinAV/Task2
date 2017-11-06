@@ -10,7 +10,7 @@ namespace Task2.CommonInterfaces.Interfaces
     public interface IWord : ISentenceElement
     {
         int Lenght { get; }
-        bool IsConstant { get; }
+        bool IsConsonant { get; }
 
         Symbol ToSymbols();
     }
