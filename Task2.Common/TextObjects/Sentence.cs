@@ -7,7 +7,7 @@ using Task2.CommonInterfaces.Interfaces;
 
 namespace Task2.Common.TextObjects
 {
-    class Sentence : ISentence
+    public class Sentence : ISentence
     {
         public int NumberOfWords => throw new NotImplementedException();
 

@@ -8,7 +8,7 @@ namespace Task2.CommonInterfaces.Interfaces
 {
     public interface IText
     {
-        List<ISentence> Text { get; }
+        List<ISentence> Sentences { get; }
         
         void DeleteWordOnConstatnt(int length);
         void FindWordsInInterrogativeSentences(int length);

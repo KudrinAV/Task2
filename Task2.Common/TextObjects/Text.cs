@@ -7,9 +7,9 @@ using Task2.CommonInterfaces.Interfaces;
 
 namespace Task2.Common.TextObjects
 {
-    class Text : IText
+    public class Text : IText
     {
-        List<ISentence> IText.Text => throw new NotImplementedException();
+        public List<ISentence> Sentences => throw new NotImplementedException();
 
         public void DeleteWordOnConstatnt(int length)
         {

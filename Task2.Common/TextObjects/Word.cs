@@ -8,7 +8,7 @@ using Task2.CommonInterfaces.Structs;
 
 namespace Task2.Common.Classes
 {
-    class Word : IWord
+    public class Word : IWord
     {
         public int Lenght { get; private set; }
 
