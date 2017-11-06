@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Word.cs" />
+    <Compile Include="TextObjects\PunctuationMark.cs" />
+    <Compile Include="TextObjects\Text.cs" />
+    <Compile Include="TextObjects\Word.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
