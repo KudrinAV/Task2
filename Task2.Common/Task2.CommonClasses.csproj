@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Parser\Parser.cs" />
     <Compile Include="TextObjects\PunctuationMark.cs" />
     <Compile Include="TextObjects\Sentence.cs" />
     <Compile Include="TextObjects\Text.cs" />
@@ -52,9 +53,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Parser\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Task2.CommonInterfaces\Task2.CommonInterfaces.csproj">
       <Project>{b0143fb2-59c1-47f6-8911-3c1e078a8c02}</Project>

@@ -8,7 +8,7 @@ using Task2.CommonInterfaces.Interfaces;
 
 namespace Task2.CommonInterfaces.ParserInterfaces
 {
-    interface IParser
+    public interface IParser
     {
         IText TextParser(StreamReader streamReader);
         ISentence SentenceParser(string sentence);
