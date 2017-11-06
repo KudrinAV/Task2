@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IPunctuationMark.cs" />
+    <Compile Include="Interfaces\ISentence.cs" />
     <Compile Include="Interfaces\ISentenceElement.cs" />
     <Compile Include="Interfaces\IWord.cs" />
     <Compile Include="Program.cs" />
