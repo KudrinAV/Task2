@@ -10,6 +10,7 @@ namespace Task2.CommonInterfaces.Interfaces
     {
         List<ISentenceElement> Sentence { get; }
         int NumberOfWords { get; }
+        bool IsInterrogativeSentence { get; }
 
         void ReplaceWordForSubstring(int length);
     }
