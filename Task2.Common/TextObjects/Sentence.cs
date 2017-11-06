@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Task2.CommonInterfaces.Interfaces;
 
-namespace Task2.Common.TextObjects
+namespace Task2.CommonClasses.TextObjects
 {
     public class Sentence : ISentence
     {

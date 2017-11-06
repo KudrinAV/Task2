@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Task2.CommonInterfaces.Interfaces;
 using Task2.CommonInterfaces.Structs;
 
-namespace Task2.Common.Classes
+namespace Task2.CommonClasses.Classes
 {
     public class PunctuationMark : IPunctuationMark
     {

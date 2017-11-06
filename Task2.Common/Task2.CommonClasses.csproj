@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{438EE515-508C-4797-9EFB-B51D488CFE06}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task2.Common</RootNamespace>
-    <AssemblyName>Task2.Common</AssemblyName>
+    <RootNamespace>Task2.CommonClasses</RootNamespace>
+    <AssemblyName>Task2.CommonClasses</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Parser\Parser.cs" />
+    <Compile Include="ParserObj\Parser.cs" />
     <Compile Include="TextObjects\PunctuationMark.cs" />
     <Compile Include="TextObjects\Sentence.cs" />
     <Compile Include="TextObjects\Text.cs" />
@@ -53,7 +53,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Task2.CommonInterfaces\Task2.CommonInterfaces.csproj">
       <Project>{b0143fb2-59c1-47f6-8911-3c1e078a8c02}</Project>
