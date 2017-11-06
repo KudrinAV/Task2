@@ -10,7 +10,6 @@ namespace Task2.CommonInterfaces.Interfaces
     {
         List<ISentence> Text { get; }
         
-
         void DeleteWordOnConstatnt(int length);
         void FindWordsInInterrogativeSentences(int length);
 

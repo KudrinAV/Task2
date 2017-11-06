@@ -11,6 +11,5 @@ namespace Task2.CommonInterfaces.Interfaces
     {
         bool IsItFinishedMark { get; }
         Symbol Symbols { get; }
-
     }
 }
