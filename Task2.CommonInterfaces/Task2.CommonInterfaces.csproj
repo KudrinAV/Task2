@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IPunctuationMark.cs" />
-    <Compile Include="Interfaces\ISentence.cs" />
-    <Compile Include="Interfaces\ISentenceElement.cs" />
-    <Compile Include="Interfaces\IText.cs" />
-    <Compile Include="Interfaces\IWord.cs" />
+    <Compile Include="TextObjectsInterfaces\IPunctuationMark.cs" />
+    <Compile Include="TextObjectsInterfaces\ISentence.cs" />
+    <Compile Include="TextObjectsInterfaces\ISentenceElement.cs" />
+    <Compile Include="TextObjectsInterfaces\IText.cs" />
+    <Compile Include="TextObjectsInterfaces\IWord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structs\Symbol.cs" />
@@ -57,6 +57,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ParserInterfaces\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
