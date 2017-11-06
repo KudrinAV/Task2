@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TextObjects\PunctuationMark.cs" />
+    <Compile Include="TextObjects\Sentence.cs" />
     <Compile Include="TextObjects\Text.cs" />
     <Compile Include="TextObjects\Word.cs" />
     <Compile Include="Program.cs" />
