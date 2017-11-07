@@ -9,7 +9,7 @@ namespace Task2.CommonClasses.TextObjects
 {
     public class Text : IText
     {
-        public List<ISentence> Sentences => throw new NotImplementedException();
+        public List<ISentence> Sentences { get; private set; }
 
         public void DeleteWordOnConstatnt(int length)
         {
