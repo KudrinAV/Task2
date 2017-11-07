@@ -14,11 +14,11 @@ namespace Task2.CommonClasses.Classes
 
         public Symbol Symbols => throw new NotImplementedException();
 
-        public string Value => throw new NotImplementedException();
+        public string Value { get; set; }
 
         public PunctuationMark(string value)
         {
-
+            Value = value;
         }
     }
 }

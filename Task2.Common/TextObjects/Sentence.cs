@@ -13,11 +13,16 @@ namespace Task2.CommonClasses.TextObjects
 
         public bool IsInterrogativeSentence => throw new NotImplementedException();
 
-        public List<ISentenceElement> Elements => throw new NotImplementedException();
+        public List<ISentenceElement> Elements { get; set; }
 
         public void ReplaceWordForSubstring(int length)
         {
             throw new NotImplementedException();
+        }
+        
+        public Sentence()
+        {
+            Elements = new List<ISentenceElement>();
         }
     }
 }

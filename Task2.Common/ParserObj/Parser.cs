@@ -17,7 +17,7 @@ namespace Task2.CommonClasses.ParserObj
     {
         private Regex _lineToSentences = new Regex(@"([\w\s\-\,\'\~\:\(\)\""]+[\.\?\!]{3})|([\w\s\-\,\'\~\:\(\)\""]+[(\?\!)]{2})|([\w\s\-\,\'\~\:\(\)\""]+[\.\!\?]{1})");
 
-        private Regex _sentenceToElements = new Regex(@"(\[)|(\w)|(\"")|(\])|(\~)");
+        private Regex _sentenceToElements = new Regex(@"(\[)|(\w+)|(\"")|(\])|(\~)|(\.{3})|([\!\?]{2})");
 
 
         public ISentence SentenceParser(string sentence)
@@ -29,16 +29,9 @@ namespace Task2.CommonClasses.ParserObj
 
             foreach(Match item in _sentenceToElements.Matches(sentence))
             {
-                for(int i = 0; i< item.Groups.Count; i++)
-                {
-                    if (item.Groups[i].Value.Trim() != "")
-                    {
-                        resultSentence.Elements.Add(toISentenceElement(item.Groups[i].Value.Trim()));
-                        Console.WriteLine(item.Groups[i].Value.Trim());
-                    }
-                }
+                resultSentence.Elements.Add(toISentenceElement(item.Value.Trim()));
             }
-
+            
             return resultSentence;
         }
 
@@ -60,29 +53,17 @@ namespace Task2.CommonClasses.ParserObj
                         line = notFinishedSentence + line;
 
                         var sentences = _lineToSentences.Split(line).Select(x => Regex.Replace(x.Trim(), @"\s+", @" ")).ToArray();
-                       
+                        
                         if(sentences.Last() != "")
                         {
+                            resultText.Sentences.AddRange(sentences.Where(x => x != sentences.Last()).Select(SentenceParser));
                             notFinishedSentence = sentences.Last();
-                            foreach (var item in sentences)
-                            {
-                                if (item != "" && item != sentences.Last())
-                                {
-                                    learningRegex.Add(item);
-                                }
                             }
-                        }
                         else
                         {
                             resultText.Sentences.AddRange(sentences.Select(SentenceParser));
                             notFinishedSentence = null;
-                            foreach (var item in sentences)
-                            {
-                                if (item != "" ) learningRegex.Add(item);
-                            }
                         }
-
-                        //parsingText.Sentences.Add(var);
                     }
                 }
                 
@@ -99,10 +80,6 @@ namespace Task2.CommonClasses.ParserObj
                 streamReader.Dispose();
             }
             Console.WriteLine();
-            foreach (var item in learningRegex)
-            {
-                Console.WriteLine(item);
-            }
             return resultText;
         }
     }

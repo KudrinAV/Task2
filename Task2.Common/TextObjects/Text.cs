@@ -9,7 +9,7 @@ namespace Task2.CommonClasses.TextObjects
 {
     public class Text : IText
     {
-        public List<ISentence> Sentences { get; private set; }
+        public List<ISentence> Sentences { get; set; }
 
         public void DeleteWordOnConstatnt(int length)
         {
@@ -19,6 +19,11 @@ namespace Task2.CommonClasses.TextObjects
         public void FindWordsInInterrogativeSentences(int length)
         {
             throw new NotImplementedException();
+        }
+
+        public Text()
+        {
+            Sentences = new List<ISentence>();
         }
     }
 }
