@@ -13,11 +13,17 @@ namespace Task2.CommonClasses.ParserObj
 {
     public class Parser : IParser
     {
-        private Regex _lineToSentences = new Regex(@"([\w\s\-\,\'\~\:\(\)]+[\.\?\!]{3})|([\w\s\-\,\'\~\:\(\)]+[(\?\!)]{2})|([\w\s\-\,\'\~\:\(\)]+[\.\!\?]{1})");
+        private Regex _lineToSentences = new Regex(@"([\w\s\-\,\'\~\:\(\)\""]+[\.\?\!]{3})|([\w\s\-\,\'\~\:\(\)\""]+[(\?\!)]{2})|([\w\s\-\,\'\~\:\(\)\""]+[\.\!\?]{1})");
+
+        private Regex _sentenceToElements = new Regex(@"");
+
 
         public ISentence SentenceParser(string sentence)
         {
             var resultSentence = new Sentence();
+
+            Func<string, ISentenceElement> toISentenceElement =
+                item => (!
 
             return resultSentence;
         }
@@ -87,7 +93,7 @@ namespace Task2.CommonClasses.ParserObj
             {
                 Console.WriteLine(item);
             }
-            return parsingText;
+            return resultText;
         }
     }
 }
