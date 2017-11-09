@@ -20,7 +20,7 @@ namespace Task2.CommonClasses.ParserObj
         private Regex _sentenceToElements = new Regex(@"(\[)|(\w+)|(\"")|(\])|(\~)|([\.\!\?]{3)|([\!\?]{2})|([\.\!\?]{1})");
 
     
-        public ISentence SentenceParser(string sentence)
+        public ISentence ParseSentence(string sentence)
         {
             var resultSentence = new Sentence();
 
@@ -35,7 +35,7 @@ namespace Task2.CommonClasses.ParserObj
             return resultSentence;
         }
 
-        public IText TextParser(StreamReader streamReader)
+        public IText ParseText(StreamReader streamReader)
         {
             IText resultText = new Text();
             List<string> learningRegex = new List<string>();
