@@ -18,17 +18,21 @@ namespace Task2
             StreamReader streamReader = new StreamReader(@"..\test.txt");
             IText text = new CommonClasses.TextObjects.Text();
             text = myParser.ParseText(streamReader);
-            foreach (var item in text.Sentences)
+            foreach(var item in text.ShowAllSentncesSortedByNumberOfWordsAsc())
             {
-                Console.WriteLine(item.IsInterrogativeSentence());
-                //Console.WriteLine(item.GetNumberOfWords());
-                //foreach (var temp in item.Elements)
-                //{
-                //    Console.Write(temp.Value + "  ");
-                //}
-                //Console.WriteLine();
+                Console.WriteLine(item.ToString());
             }
-            
+            //foreach (var item in text.Sentences)
+            //{
+            //    Console.WriteLine(item.IsInterrogativeSentence());
+            //    Console.WriteLine(item.GetNumberOfWords());
+            //    foreach (var temp in item.Elements)
+            //    {
+            //        Console.Write(temp.Value + "  ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
         }
     
     }

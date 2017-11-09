@@ -12,6 +12,7 @@ namespace Task2.CommonInterfaces.Interfaces
         
         void DeleteWordOnConstatnt(int length);
         void FindWordsInInterrogativeSentences(int length);
+        IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc();
 
     }
 }

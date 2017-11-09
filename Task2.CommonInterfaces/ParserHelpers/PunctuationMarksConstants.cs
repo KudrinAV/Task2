@@ -8,7 +8,7 @@ namespace Task2.CommonClasses.ParserHelpers
 {
     public static class PunctuationMarksConstants
     {
-        public static string[] QuotesMarks = { "\"", "'" };
+        public static string[] QuotesMarks = { "\"" };
 
         public static string[] EndSentenceMarks = { ".", "?", "!", "!?", "?!", "...", "!!!", "???" };
 

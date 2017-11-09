@@ -21,6 +21,12 @@ namespace Task2.CommonClasses.TextObjects
             throw new NotImplementedException();
         }
 
+        public IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc()
+        {
+            var sort = Sentences.OrderBy(x => x.GetNumberOfWords());
+            return sort;
+        }
+
         public Text()
         {
             Sentences = new List<ISentence>();

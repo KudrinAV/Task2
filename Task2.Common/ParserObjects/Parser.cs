@@ -17,7 +17,7 @@ namespace Task2.CommonClasses.ParserObj
     {
         private Regex _lineToSentences = new Regex(@"([\w\s\-\,\'\~\:\(\)\""]+[\.\?\!]{3})|([\w\s\-\,\'\~\:\(\)\""]+[(\?\!)]{2})|([\w\s\-\,\'\~\:\(\)\""]+[\.\!\?]{1})");
 
-        private Regex _sentenceToElements = new Regex(@"(\[)|(\w+)|(\"")|(\])|(\~)|([\.\!\?]{3})|([\!\?]{2})|([\.\!\?]{1})");
+        private Regex _sentenceToElements = new Regex(@"(\[)|([\w\']+)|(\"")|(\])|(\~)|([\.\!\?]{3})|([\!\?]{2})|([\.\!\?]{1})");
 
     
         public ISentence ParseSentence(string sentence)
