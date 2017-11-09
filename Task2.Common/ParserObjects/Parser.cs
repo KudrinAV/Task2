@@ -56,12 +56,12 @@ namespace Task2.CommonClasses.ParserObj
                         
                         if(sentences.Last() != "")
                         {
-                            resultText.Sentences.AddRange(sentences.Where(x => x != sentences.Last()).Select(SentenceParser));
+                            resultText.Sentences.AddRange(sentences.Where(x => x != sentences.Last()).Select(ParseSentence));
                             notFinishedSentence = sentences.Last();
                             }
                         else
                         {
-                            resultText.Sentences.AddRange(sentences.Select(SentenceParser));
+                            resultText.Sentences.AddRange(sentences.Select(ParseSentence));
                             notFinishedSentence = null;
                         }
                     }

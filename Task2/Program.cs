@@ -17,7 +17,7 @@ namespace Task2
                 Parser myParser = new Parser();
                 StreamReader streamReader = new StreamReader(@"..\test.txt");
                 IText text = new CommonClasses.TextObjects.Text();
-                text = myParser.TextParser(streamReader);
+                text = myParser.ParseText(streamReader);
                 foreach (var item in text.Sentences)
                 {
                     foreach (var temp in item.Elements)

@@ -10,8 +10,8 @@ namespace Task2.CommonInterfaces.ParserInterfaces
 {
     public interface IParser
     {
-        IText TextParser(StreamReader streamReader);
-        ISentence SentenceParser(string sentence);
+        IText ParseText(StreamReader streamReader);
+        ISentence ParseSentence(string sentence);
 
     }
 }
