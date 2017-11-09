@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Task2.CommonClasses.ParserObj;
-
+using Task2.CommonInterfaces.Interfaces;
 
 namespace Task2.CommonClasses
 {
@@ -15,8 +15,16 @@ namespace Task2.CommonClasses
         {
             Parser myParser = new Parser();
             StreamReader streamReader = new StreamReader(@"test.txt");
-
-            myParser.TextParser(streamReader);
+            IText text = new TextObjects.Text();
+            text = myParser.TextParser(streamReader);
+            foreach(var item in text.Sentences)
+            {
+                foreach(var temp in item.Elements)
+                {
+                    Console.Write(temp.Value + "  ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
