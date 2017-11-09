@@ -25,7 +25,7 @@ namespace Task2.CommonClasses.ParserObj
             var resultSentence = new Sentence();
 
             Func<string, ISentenceElement> toISentenceElement =
-                item => !PunctuationMarksHelper.AllSentenceMarks.Contains(item) ? (ISentenceElement)new Word(item) : (ISentenceElement)new PunctuationMark(item);
+                item => !PunctuationMarksConstants.AllSentenceMarks.Contains(item) ? (ISentenceElement)new Word(item) : (ISentenceElement)new PunctuationMark(item);
 
             foreach(Match item in _sentenceToElements.Matches(sentence))
             {
