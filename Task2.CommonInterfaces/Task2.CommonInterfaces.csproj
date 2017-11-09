@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParserHelpers\PunctuationMarksConstants.cs" />
     <Compile Include="ParserInterfaces\IParser.cs" />
     <Compile Include="TextObjectsInterfaces\IPunctuationMark.cs" />
     <Compile Include="TextObjectsInterfaces\ISentence.cs" />

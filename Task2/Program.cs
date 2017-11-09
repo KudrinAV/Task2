@@ -25,7 +25,7 @@ namespace Task2
                         Console.Write(temp.Value + "  ");
                     }
                     Console.WriteLine();
-                }
+            }
             
         }
     
