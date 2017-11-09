@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{438EE515-508C-4797-9EFB-B51D488CFE06}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Task2.Classes</RootNamespace>
-    <AssemblyName>Task2.Classes</AssemblyName>
+    <RootNamespace>Task2.CommonClasses</RootNamespace>
+    <AssemblyName>Task2.CommonClasses</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,7 +51,6 @@
     <Compile Include="TextObjects\Sentence.cs" />
     <Compile Include="TextObjects\Text.cs" />
     <Compile Include="TextObjects\Word.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
