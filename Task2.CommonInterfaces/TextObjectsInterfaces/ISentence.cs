@@ -9,9 +9,9 @@ namespace Task2.CommonInterfaces.Interfaces
     public interface ISentence
     {
         List<ISentenceElement> Elements { get; }
-        int NumberOfWords { get; }
-        bool IsInterrogativeSentence { get; }
 
+        int GetNumberOfWords();
+        bool IsInterrogativeSentence();
         void ReplaceWordForSubstring(int length);
     }
 }

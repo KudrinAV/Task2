@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task2.CommonClasses.ParserHelpers
 {
-    public static class PunctuationMarksHelper
+    public static class PunctuationMarksConstants
     {
         public static string[] QuotesMarks = { "\"", "'" };
 

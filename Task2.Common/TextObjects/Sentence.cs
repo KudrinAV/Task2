@@ -9,17 +9,28 @@ namespace Task2.CommonClasses.TextObjects
 {
     public class Sentence : ISentence
     {
-        public int NumberOfWords => throw new NotImplementedException();
-
-        public bool IsInterrogativeSentence => throw new NotImplementedException();
-
         public List<ISentenceElement> Elements { get; private set; }
+
+        public int GetNumberOfWords()
+        {
+            //int coun = 0;
+            //Func<List<ISentenceElement>, int> count =
+            //    item => Elements.Where(x => x is IWord).Count();
+            var count = Elements.Where(x => x is IWord).Count();
+            return count;
+        }
+
 
         public void ReplaceWordForSubstring(int length)
         {
             throw new NotImplementedException();
         }
-        
+
+        public bool IsInterrogativeSentence()
+        {
+            return Elements.Last().ToString() == "?";
+        }
+
         public Sentence()
         {
             Elements = new List<ISentenceElement>();
