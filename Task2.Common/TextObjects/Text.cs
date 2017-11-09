@@ -21,10 +21,14 @@ namespace Task2.CommonClasses.TextObjects
             var finding = from sentence in Sentences
                           group sentence by sentence.IsInterrogativeSentence() into interrogativeSentences
                           where interrogativeSentences.Key
-                          from item in interrogativeSentences
-                          from element in item.Elements
-                          where element is IWord && element.Value.Length == length
-                          select element.Value;
+                          from elements in interrogativeSentences
+                          from element in elements.Elements
+                          group element by element is IWord && element.Value.Length == length into wordGroup
+                          where wordGroup.Key
+                          from word in wordGroup
+                          group word by word.Value.ToLower() into result
+                          select result.Key;
+                
             return finding;
         }
 

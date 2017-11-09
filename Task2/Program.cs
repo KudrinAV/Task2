@@ -18,7 +18,7 @@ namespace Task2
             StreamReader streamReader = new StreamReader(@"..\test.txt");
             IText text = new CommonClasses.TextObjects.Text();
             text = myParser.ParseText(streamReader);
-            foreach(var item in text.FindWordsInInterrogativeSentences(5))
+            foreach(var item in text.FindWordsInInterrogativeSentences(4))
             {
                 Console.WriteLine(item);
             }
