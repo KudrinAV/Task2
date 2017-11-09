@@ -14,17 +14,19 @@ namespace Task2
         static void Main(string[] args)
         {
         
-                Parser myParser = new Parser();
-                StreamReader streamReader = new StreamReader(@"..\test.txt");
-                IText text = new CommonClasses.TextObjects.Text();
-                text = myParser.ParseText(streamReader);
-                foreach (var item in text.Sentences)
-                {
-                    foreach (var temp in item.Elements)
-                    {
-                        Console.Write(temp.Value + "  ");
-                    }
-                    Console.WriteLine();
+            Parser myParser = new Parser();
+            StreamReader streamReader = new StreamReader(@"..\test.txt");
+            IText text = new CommonClasses.TextObjects.Text();
+            text = myParser.ParseText(streamReader);
+            foreach (var item in text.Sentences)
+            {
+                Console.WriteLine(item.IsInterrogativeSentence());
+                //Console.WriteLine(item.GetNumberOfWords());
+                //foreach (var temp in item.Elements)
+                //{
+                //    Console.Write(temp.Value + "  ");
+                //}
+                //Console.WriteLine();
             }
             
         }

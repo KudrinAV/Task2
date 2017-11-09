@@ -13,9 +13,6 @@ namespace Task2.CommonClasses.TextObjects
 
         public int GetNumberOfWords()
         {
-            //int coun = 0;
-            //Func<List<ISentenceElement>, int> count =
-            //    item => Elements.Where(x => x is IWord).Count();
             var count = Elements.Where(x => x is IWord).Count();
             return count;
         }
@@ -28,7 +25,7 @@ namespace Task2.CommonClasses.TextObjects
 
         public bool IsInterrogativeSentence()
         {
-            return Elements.Last().ToString() == "?";
+            return Elements.Last().Value.Contains("?");
         }
 
         public Sentence()
