@@ -11,7 +11,7 @@ namespace Task2.CommonInterfaces.Interfaces
         List<ISentence> Sentences { get; }
         
         void DeleteWordOnConstatnt(int length);
-        void FindWordsInInterrogativeSentences(int length);
+        IEnumerable<string> FindWordsInInterrogativeSentences(int length);
         IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc();
 
     }

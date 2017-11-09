@@ -16,9 +16,16 @@ namespace Task2.CommonClasses.TextObjects
             throw new NotImplementedException();
         }
 
-        public void FindWordsInInterrogativeSentences(int length)
+        public IEnumerable<string> FindWordsInInterrogativeSentences(int length)
         {
-            throw new NotImplementedException();
+            var finding = from sentence in Sentences
+                          group sentence by sentence.IsInterrogativeSentence() into interrogativeSentences
+                          where interrogativeSentences.Key
+                          from item in interrogativeSentences
+                          from element in item.Elements
+                          where element is IWord && element.Value.Length == length
+                          select element.Value;
+            return finding;
         }
 
         public IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc()

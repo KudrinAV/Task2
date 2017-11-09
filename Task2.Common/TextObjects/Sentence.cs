@@ -38,7 +38,7 @@ namespace Task2.CommonClasses.TextObjects
             string resultString = null;
             foreach(var item in Elements)
             {
-                resultString = item is IWord ? resultString+= " " + item.Value : resultString += item.Value;
+                resultString = item != Elements.First() ? item is IWord ? resultString += " " + item.Value : resultString += item.Value : resultString += item.Value;
             }
             return resultString;
         }
