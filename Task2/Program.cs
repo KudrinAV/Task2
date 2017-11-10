@@ -19,16 +19,28 @@ namespace Task2
             IText text = new CommonClasses.TextObjects.Text();
             text = myParser.ParseText(streamReader);
 
-            foreach(var item in text.Sentences)
+            foreach (var item in text.Sentences)
             {
                 Console.WriteLine(item.GetNumberOfWords());
                 Console.WriteLine(item.ToString());
-                item.DeleteWordOnConsonant(4);
+                item.ReplaceWordForSubstring(4, "kek lol cheburek i kek, work ");
                 Console.WriteLine(item.GetNumberOfWords());
                 Console.WriteLine(item.ToString());
                 Console.WriteLine();
-                
+
             }
+
+
+            //foreach(var item in text.Sentences)
+            //{
+            //    Console.WriteLine(item.GetNumberOfWords());
+            //    Console.WriteLine(item.ToString());
+            //    item.DeleteWordOnConsonant(4);
+            //    Console.WriteLine(item.GetNumberOfWords());
+            //    Console.WriteLine(item.ToString());
+            //    Console.WriteLine();
+
+            //}
             //foreach(var item in text.FindWordsInInterrogativeSentences(4))
             //{
             //    Console.WriteLine(item);

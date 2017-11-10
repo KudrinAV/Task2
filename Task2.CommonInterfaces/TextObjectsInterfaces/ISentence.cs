@@ -12,7 +12,7 @@ namespace Task2.CommonInterfaces.Interfaces
 
         int GetNumberOfWords();
         bool IsInterrogativeSentence();
-        void ReplaceWordForSubstring(int length);
+        void ReplaceWordForSubstring(int length, string subString);
         void DeleteWordOnConsonant(int length);
     }
 }
