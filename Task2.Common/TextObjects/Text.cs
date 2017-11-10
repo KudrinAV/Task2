@@ -9,38 +9,8 @@ namespace Task2.CommonClasses.TextObjects
 {
     public class Text : IText
     {
-        private char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
-
         public List<ISentence> Sentences { get; private set; }
-
-        private bool IsAVowel(char letter)
-        {
-            foreach (var item in vowels)
-            {
-                if (letter == item)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        public void DeleteWordOnConsonant(int length)
-        {
-            var finding = from sentence in Sentences
-                          from element in sentence.Elements
-                          group element by element is IWord && element.Value.Length == length && IsAVowel(element.Value.First()) into wordGroup
-                          where wordGroup.Key
-                          from word in wordGroup
-                          select word.Value;
-
-            foreach(var item in finding)
-            {
-                Console.WriteLine(item);
-            }
-
-        }
-
+        
         public IEnumerable<string> FindWordsInInterrogativeSentences(int length)
         {
             var finding = from sentence in Sentences

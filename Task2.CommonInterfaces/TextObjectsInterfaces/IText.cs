@@ -10,9 +10,7 @@ namespace Task2.CommonInterfaces.Interfaces
     {
         List<ISentence> Sentences { get; }
         
-        void DeleteWordOnConsonant(int length);
         IEnumerable<string> FindWordsInInterrogativeSentences(int length);
         IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc();
-
     }
 }
