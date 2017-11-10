@@ -8,6 +8,6 @@ namespace Task2.CommonInterfaces.Interfaces
 {
     public interface ITextAnalyzer
     {
-        Dictionary<string, Dictionary<int, int[]>> dictionary { get; }
+        Dictionary<string, Dictionary<int, int[]>> Dictionary { get; }
     }
 }
