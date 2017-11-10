@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B0143FB2-59C1-47F6-8911-3C1E078A8C02}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Task2.CommonInterfaces</RootNamespace>
-    <AssemblyName>Task2.CommonInterfaces</AssemblyName>
+    <RootNamespace>Task2.Contracts</RootNamespace>
+    <AssemblyName>Task2.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

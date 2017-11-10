@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Task2.CommonClasses.ParserObj;
-using Task2.CommonInterfaces.Interfaces;
+using Task2.Contracts.Interfaces;
 
 namespace Task2
 {
