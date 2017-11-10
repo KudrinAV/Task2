@@ -49,19 +49,13 @@ namespace Task2.CommonClasses.TextObjects
             Sentences = sentences;
         }
 
-        public IEnumerable<IDictionary<string, Pair>> FindAllWord()
+        public IEnumerable<IGrouping<string, int>> FindAllWords()
         {
             var finding = from sentence in Sentences
                           from element in sentence.Elements
                           where element is IWord
                           group Sentences.IndexOf(sentence) by element.Value.ToLower() into result
-                          select new
-                          {
-                              name = result.Key,
-                              array = result.ToArray().Distinct(),
-                              Pair pair = new Pair(result.Count(), array)
-                              
-                          };
+                          select result;
 
             return finding;
         }

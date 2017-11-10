@@ -14,6 +14,6 @@ namespace Task2.Contracts.Interfaces
         IEnumerable<string> FindWordsInInterrogativeSentences(int length);
         IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc();
         void GetTheSentenceToReplaceWordOnSubString(int index, int length, string subString);
-        IEnumerable<IDictionary<string, Pair>> FindAllWords();
+        IEnumerable<IGrouping<string, int>> FindAllWords();
     }
 }
