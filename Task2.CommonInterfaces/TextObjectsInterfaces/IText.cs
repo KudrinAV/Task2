@@ -12,5 +12,6 @@ namespace Task2.CommonInterfaces.Interfaces
         
         IEnumerable<string> FindWordsInInterrogativeSentences(int length);
         IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc();
+        void GetTheSentenceToReplaceWordOnSubString(int index, int length, string subString);
     }
 }
