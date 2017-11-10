@@ -38,13 +38,11 @@ namespace Task2.CommonClasses.ParserObj
         public IText ParseText(StreamReader streamReader)
         {
             IText resultText = new Text();
-            List<string> learningRegex = new List<string>();
             string line;
             string notFinishedSentence = null;
 
             try
             {
-                
                 while ((line = streamReader.ReadLine()) != null)
                 { 
                     if (Regex.Replace(line.Trim(), @"\s+", @" ") != string.Empty)
@@ -66,8 +64,6 @@ namespace Task2.CommonClasses.ParserObj
                         }
                     }
                 }
-                
-
             }
             catch (IOException e)
             {

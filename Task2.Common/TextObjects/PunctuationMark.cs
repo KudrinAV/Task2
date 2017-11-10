@@ -10,7 +10,7 @@ namespace Task2.CommonClasses.Classes
 {
     public class PunctuationMark : IPunctuationMark
     {
-        public bool IsItEndMark => throw new NotImplementedException();
+        public bool IsEndMark => throw new NotImplementedException();
 
         public Symbol Symbols => throw new NotImplementedException();
 

@@ -9,7 +9,7 @@ namespace Task2.CommonInterfaces.Interfaces
 {
     public interface IPunctuationMark : ISentenceElement
     {
-        bool IsItEndMark { get; }
+        bool IsEndMark { get; }
         Symbol Symbols { get; }
     }
 }
