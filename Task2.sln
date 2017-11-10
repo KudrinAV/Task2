@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2.2", "Task2.2\Task2.2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2.CommonClasses", "Task2.Common\Task2.CommonClasses.csproj", "{438EE515-508C-4797-9EFB-B51D488CFE06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2.CommonInterfaces", "Task2.CommonInterfaces\Task2.CommonInterfaces.csproj", "{B0143FB2-59C1-47F6-8911-3C1E078A8C02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2.Contracts", "Task2.CommonInterfaces\Task2.Contracts.csproj", "{B0143FB2-59C1-47F6-8911-3C1E078A8C02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

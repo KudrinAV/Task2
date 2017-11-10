@@ -19,8 +19,9 @@ namespace Task2
             IText text = new CommonClasses.TextObjects.Text();
             text = myParser.ParseText(streamReader);
 
-            Console.WriteLine();
+            Console.WriteLine(text.Sentences.ElementAt(10).ToString());
             text.GetTheSentenceToReplaceWordOnSubString(index: 10, length: 4,subString:" kek lol cheburek i kek, work pls ");
+            Console.WriteLine(text.Sentences.ElementAt(10).ToString());
 
             //item.ReplaceWordForSubstring(4, "kek lol cheburek i kek, work pls ");
             //Console.WriteLine(item.GetNumberOfWords());
@@ -44,10 +45,10 @@ namespace Task2
             //{
             //    Console.WriteLine(item);
             //}
-            foreach (var item in text.ShowAllSentncesSortedByNumberOfWordsAsc())
-            {
-                Console.WriteLine(item.ToString());
-            }
+            //foreach (var item in text.ShowAllSentncesSortedByNumberOfWordsAsc())
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
             //foreach (var item in text.Sentences)
             //{
             //    Console.WriteLine(item.IsInterrogativeSentence());

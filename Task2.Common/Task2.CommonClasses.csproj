@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ParserObjects\Parser.cs" />
+    <Compile Include="TextAnalyzer\TextAnalyzer.cs" />
     <Compile Include="TextObjects\PunctuationMark.cs" />
     <Compile Include="TextObjects\Sentence.cs" />
     <Compile Include="TextObjects\Text.cs" />
@@ -56,9 +57,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Task2.CommonInterfaces\Task2.CommonInterfaces.csproj">
+    <ProjectReference Include="..\Task2.CommonInterfaces\Task2.Contracts.csproj">
       <Project>{b0143fb2-59c1-47f6-8911-3c1e078a8c02}</Project>
-      <Name>Task2.CommonInterfaces</Name>
+      <Name>Task2.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

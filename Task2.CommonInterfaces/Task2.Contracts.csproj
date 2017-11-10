@@ -46,12 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ParserHelpers\PunctuationMarksConstants.cs" />
-    <Compile Include="ParserInterfaces\IParser.cs" />
-    <Compile Include="TextObjectsInterfaces\IPunctuationMark.cs" />
-    <Compile Include="TextObjectsInterfaces\ISentence.cs" />
-    <Compile Include="TextObjectsInterfaces\ISentenceElement.cs" />
-    <Compile Include="TextObjectsInterfaces\IText.cs" />
-    <Compile Include="TextObjectsInterfaces\IWord.cs" />
+    <Compile Include="Interfaces\IParser.cs" />
+    <Compile Include="Interfaces\IPunctuationMark.cs" />
+    <Compile Include="Interfaces\ISentence.cs" />
+    <Compile Include="Interfaces\ISentenceElement.cs" />
+    <Compile Include="Interfaces\IText.cs" />
+    <Compile Include="Interfaces\IWord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structs\Symbol.cs" />
   </ItemGroup>

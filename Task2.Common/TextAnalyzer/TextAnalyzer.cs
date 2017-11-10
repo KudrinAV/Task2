@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Classes
+namespace Task2.CommonClasses.TextAnalyzer
 {
-    public class Class1
+    public class TextAnalyzer
     {
     }
 }
