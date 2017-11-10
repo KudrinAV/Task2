@@ -19,9 +19,11 @@ namespace Task2
             IText text = new CommonClasses.TextObjects.Text();
             text = myParser.ParseText(streamReader);
 
-            Console.WriteLine(text.Sentences.ElementAt(10).ToString());
-            text.GetTheSentenceToReplaceWordOnSubString(index: 10, length: 4,subString:" kek lol cheburek i kek, work pls ");
-            Console.WriteLine(text.Sentences.ElementAt(10).ToString());
+            text.FindAllWord();
+
+            //Console.WriteLine(text.Sentences.ElementAt(10).ToString());
+            //text.GetTheSentenceToReplaceWordOnSubString(index: 10, length: 4,subString:" kek lol cheburek i kek, work pls ");
+            //Console.WriteLine(text.Sentences.ElementAt(10).ToString());
 
             //item.ReplaceWordForSubstring(4, "kek lol cheburek i kek, work pls ");
             //Console.WriteLine(item.GetNumberOfWords());

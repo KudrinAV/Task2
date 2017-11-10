@@ -54,6 +54,7 @@
     <Compile Include="Interfaces\IText.cs" />
     <Compile Include="Interfaces\IWord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structs\Pair.cs" />
     <Compile Include="Structs\Symbol.cs" />
   </ItemGroup>
   <ItemGroup>

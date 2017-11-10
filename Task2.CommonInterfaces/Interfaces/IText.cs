@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Task2.Contracts.Structs;
 
 namespace Task2.Contracts.Interfaces
 {
@@ -13,5 +14,6 @@ namespace Task2.Contracts.Interfaces
         IEnumerable<string> FindWordsInInterrogativeSentences(int length);
         IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc();
         void GetTheSentenceToReplaceWordOnSubString(int index, int length, string subString);
+        IEnumerable<IDictionary<string, Pair>> FindAllWords();
     }
 }

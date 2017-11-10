@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Task2.Contracts.Interfaces;
+using Task2.Contracts.Structs;
 
 namespace Task2.CommonClasses.TextObjects
 {
@@ -46,6 +47,23 @@ namespace Task2.CommonClasses.TextObjects
         public Text(List<ISentence> sentences)
         {
             Sentences = sentences;
+        }
+
+        public IEnumerable<IDictionary<string, Pair>> FindAllWord()
+        {
+            var finding = from sentence in Sentences
+                          from element in sentence.Elements
+                          where element is IWord
+                          group Sentences.IndexOf(sentence) by element.Value.ToLower() into result
+                          select new
+                          {
+                              name = result.Key,
+                              array = result.ToArray().Distinct(),
+                              Pair pair = new Pair(result.Count(), array)
+                              
+                          };
+
+            return finding;
         }
     }
 }
