@@ -26,8 +26,15 @@ namespace Task2.CommonClasses.TextAnalyzer
         public List<string> ToPrintList()
         {
             List<string> strList = new List<string>();
-            foreach (var item in SubjectIndex)
+            var sorting = SubjectIndex.OrderBy(x => x.Key);
+            string temp = null;
+            foreach (var item in sorting)
             {
+                if(item.Key.First().ToString().ToLower()!= temp)
+                {
+                    strList.Add(item.Key.First().ToString().ToUpper());
+                    temp = item.Key.First().ToString();
+                }
                 strList.Add(String.Format("{0,-20}{1,-50}", item.Key, item.Value.ToString()));
             }
 

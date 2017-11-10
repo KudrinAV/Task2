@@ -27,7 +27,7 @@ namespace Task2
             //    Console.WriteLine(item.ToString());
             //}
 
-            foreach(var item in textAnalyzer.ToPrintList())
+            foreach (var item in textAnalyzer.ToPrintList())
             {
                 Console.WriteLine(item);
             }
@@ -54,7 +54,7 @@ namespace Task2
             //    Console.WriteLine();
 
             //}
-            //foreach(var item in text.FindWordsInInterrogativeSentences(4))
+            //foreach (var item in text.FindWordsInInterrogativeSentences(4))
             //{
             //    Console.WriteLine(item);
             //}
