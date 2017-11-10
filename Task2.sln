@@ -3,12 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2.1", "Task2\Task2.1.csproj", "{3FB46CFD-9ADE-4E0D-BCC8-395C107E0A5F}"
-	ProjectSection(ProjectDependencies) = postProject
-		{438EE515-508C-4797-9EFB-B51D488CFE06} = {438EE515-508C-4797-9EFB-B51D488CFE06}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2.2", "Task2.2\Task2.2.csproj", "{430322D0-A89F-41F5-9569-C04283B44A0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2", "Task2\Task2.csproj", "{3FB46CFD-9ADE-4E0D-BCC8-395C107E0A5F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{438EE515-508C-4797-9EFB-B51D488CFE06} = {438EE515-508C-4797-9EFB-B51D488CFE06}
 	EndProjectSection
@@ -27,10 +22,6 @@ Global
 		{3FB46CFD-9ADE-4E0D-BCC8-395C107E0A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FB46CFD-9ADE-4E0D-BCC8-395C107E0A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FB46CFD-9ADE-4E0D-BCC8-395C107E0A5F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{430322D0-A89F-41F5-9569-C04283B44A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{430322D0-A89F-41F5-9569-C04283B44A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{430322D0-A89F-41F5-9569-C04283B44A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{430322D0-A89F-41F5-9569-C04283B44A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{438EE515-508C-4797-9EFB-B51D488CFE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{438EE515-508C-4797-9EFB-B51D488CFE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{438EE515-508C-4797-9EFB-B51D488CFE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
