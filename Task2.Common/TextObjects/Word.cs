@@ -12,11 +12,7 @@ namespace Task2.CommonClasses.Classes
     {
         public int Lenght { get; private set; }
 
-        public bool IsConsonant { get; private set; }
-
         public string Value { get; private set; }
-
-        private char[] vowels = { 'a', 'e', 'i', 'o', 'u' , 'y'};
 
         public Word(string value)
         {
@@ -24,16 +20,6 @@ namespace Task2.CommonClasses.Classes
             Lenght = value.Length;
         }
 
-        public void GetIsConsonant()
-        {
-            foreach(var item in vowels)
-            {
-                if(Value[0] == item)
-                {
-                    IsConsonant = true;
-                }
-            }
-        }
 
         public Symbol ToSymbols()
         {
