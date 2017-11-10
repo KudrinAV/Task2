@@ -13,5 +13,6 @@ namespace Task2.CommonInterfaces.Interfaces
         int GetNumberOfWords();
         bool IsInterrogativeSentence();
         void ReplaceWordForSubstring(int length);
+        void DeleteWordOnConsonant(int length);
     }
 }
