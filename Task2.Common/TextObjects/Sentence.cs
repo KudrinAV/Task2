@@ -9,7 +9,7 @@ namespace Task2.CommonClasses.TextObjects
 {
     public class Sentence : ISentence
     {
-        private char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
+        private char[] _vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
 
         public List<ISentenceElement> Elements { get; private set; }
 
@@ -84,7 +84,7 @@ namespace Task2.CommonClasses.TextObjects
 
         private bool IsAVowel(char letter)
         {
-            foreach (var item in vowels)
+            foreach (var item in _vowels)
             {
                 if (letter == item)
                 {
