@@ -16,5 +16,16 @@ namespace Task2.Contracts.Structs
             CountOnText = count;
             OnWhichPagesMentioned = mentions;
         }
+
+        public override string ToString()
+        {
+            string str = CountOnText.ToString()+":";
+            for(int i=0; i<OnWhichPagesMentioned.Count(); i++)
+            {
+                str += " " + (OnWhichPagesMentioned[i] + 1).ToString();
+            }
+            return str;
+        }
+
     }
 }

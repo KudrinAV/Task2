@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Task2.CommonClasses.ParserObj;
+using Task2.CommonClasses.TextAnalyzer;
 using Task2.Contracts.Interfaces;
 
 namespace Task2
@@ -13,24 +14,26 @@ namespace Task2
     {
         static void Main(string[] args)
         {
-        
+
             Parser myParser = new Parser();
             StreamReader streamReader = new StreamReader(@"..\test.txt");
             IText text = new CommonClasses.TextObjects.Text();
             text = myParser.ParseText(streamReader);
 
-            foreach(var item in text.FindAllWords())
+            ITextAnalyzer textAnalyzer = new TextAnalyzer(text.FindAllWords());
+
+            //foreach (var item in textAnalyzer.SubjectIndex)
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+
+            foreach(var item in textAnalyzer.ToPrintList())
             {
-                Console.WriteLine(item.Key + " " + item.Count());
-                foreach(var temp in item.Distinct().ToArray())
-                {
-                    Console.WriteLine(temp);
-                }
-                
+                Console.WriteLine(item);
             }
 
             //Console.WriteLine(text.Sentences.ElementAt(10).ToString());
-            //text.GetTheSentenceToReplaceWordOnSubString(index: 10, length: 4,subString:" kek lol cheburek i kek, work pls ");
+            //text.GetTheSentenceToReplaceWordOnSubString(index: 10, length: 4, subString: " kek lol cheburek i kek, work pls ");
             //Console.WriteLine(text.Sentences.ElementAt(10).ToString());
 
             //item.ReplaceWordForSubstring(4, "kek lol cheburek i kek, work pls ");
