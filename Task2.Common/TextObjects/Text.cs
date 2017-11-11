@@ -59,5 +59,16 @@ namespace Task2.CommonClasses.TextObjects
 
             return finding;
         }
+
+        public List<ISentence> DeleteWordsOnConsonantByLength(int length)
+        {
+            List<ISentence> resultList = Sentences;
+            foreach(var item in resultList)
+            {
+                item.DeleteWordOnConsonant(length);
+            }
+
+            return resultList;
+        }
     }
 }

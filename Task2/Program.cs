@@ -24,54 +24,9 @@ namespace Task2
 
             //WriterWorker.WriteSubjectIndex(textAnalyzer.ToPrintList());
             //WriterWorker.WriteAllTextAscByNumberOfWords(text);
-            WriterWorker.WriteAllInterrogativeSentence(text);
-            WriterWorker.WriteAllWordsInInterrogativeSentences(text, 5);
-
-            //foreach (var item in textAnalyzer.SubjectIndex)
-            //{
-            //    Console.WriteLine(item.ToString());
-            //}
-
-            //foreach (var item in textAnalyzer.ToPrintList())
-            //{
-            //    Console.WriteLine(item);
-            //}
-
-            //Console.WriteLine(text.Sentences.ElementAt(10).ToString());
-            //text.GetTheSentenceToReplaceWordOnSubString(index: 10, length: 4, subString: " kek lol cheburek i kek, work pls ");
-            //Console.WriteLine(text.Sentences.ElementAt(10).ToString());
-
-            //item.ReplaceWordForSubstring(4, "kek lol cheburek i kek, work pls ");
-            //Console.WriteLine(item.GetNumberOfWords());
-            //Console.WriteLine(item.ToString());
-            //Console.WriteLine();
-
-
-
-
-            //foreach (var item in text.Sentences)
-            //{
-            //    Console.WriteLine(item.GetNumberOfWords());
-            //    Console.WriteLine(item.ToString());
-            //    item.DeleteWordOnConsonant(4);
-            //    Console.WriteLine(item.GetNumberOfWords());
-            //    Console.WriteLine(item.ToString());
-            //    Console.WriteLine();
-            //}
-
-            //}
-            //foreach (var item in text.FindWordsInInterrogativeSentences(4))
-            //{
-            //    Console.WriteLine(item);
-            //}
-            //foreach (var item in text.ShowAllSentncesSortedByNumberOfWordsAsc())
-            //{
-            //    Console.WriteLine(item.ToString());
-            //}
-            //foreach (var item in text.Sentences)
-            //{
-            //    void kek = item.IsInterrogativeSentence() ? Console.WriteLine(item.ToString()) : Console.WriteLine("hello");
-            //}
+            //WriterWorker.WriteAllInterrogativeSentence(text);
+            //WriterWorker.WriteAllWordsInInterrogativeSentences(text, 5);
+            
 
         }
     }

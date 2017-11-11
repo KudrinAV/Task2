@@ -15,5 +15,6 @@ namespace Task2.Contracts.Interfaces
         IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc();
         void GetTheSentenceToReplaceWordOnSubString(int index, int length, string subString);
         IEnumerable<IGrouping<string, int>> FindAllWords();
+        List<ISentence> DeleteWordsOnConsonantByLength(int length);
     }
 }

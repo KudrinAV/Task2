@@ -43,13 +43,24 @@ namespace Task2.CommonClasses.WriterToFile
             }
         }
 
-        public static void WriteAllWordsInInterrogativeSentences(IText text, int lenght)
+        public static void WriteAllWordsInInterrogativeSentences(IText text, int length)
         {
             using (StreamWriter sw = new StreamWriter("../testAllWordsInInterrogativeSentenceByNumber.txt", false, System.Text.Encoding.Default))
             {
-                foreach (var item in text.FindWordsInInterrogativeSentences(lenght))
+                foreach (var item in text.FindWordsInInterrogativeSentences(length))
                 {
                     sw.WriteLine(item);
+                }
+            }
+        }
+
+        public static void WriteTextWithoutWordOfSetLength(IText text, int lenght)
+        {
+            using (StreamWriter sw = new StreamWriter("../testAllWordsInInterrogativeSentenceByNumber.txt", false, System.Text.Encoding.Default))
+            {
+                foreach (var item in text.Sentences)
+                {
+                    sw.WriteLine(item.DeleteWordOnConsonant(lenght)
                 }
             }
         }
