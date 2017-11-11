@@ -12,5 +12,6 @@ namespace Task2.Contracts.ParserInterfaces
     {
         IText ParseText(string path);
         ISentence ParseSentence(string sentence);
+        IText ParseTextForTask2(string path);
     }
 }

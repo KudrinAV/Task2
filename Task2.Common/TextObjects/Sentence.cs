@@ -11,10 +11,17 @@ namespace Task2.CommonClasses.TextObjects
     {
         public List<ISentenceElement> Elements { get; private set; }
 
+        public int IndexOfLine { get; private set; }
+
         public int GetNumberOfWords()
         {
             var count = Elements.Where(x => x is IWord).Count();
             return count;
+        }
+
+        public void SetIndexOfLine(int indexOfLine)
+        {
+            IndexOfLine = indexOfLine;
         }
 
         private IEnumerable<ISentenceElement> _findWordsOnLenght(int length)
@@ -50,6 +57,12 @@ namespace Task2.CommonClasses.TextObjects
         public Sentence()
         {
             Elements = new List<ISentenceElement>();
+        }
+
+        public Sentence(int indexOfLine)
+        {
+            Elements = new List<ISentenceElement>();
+            IndexOfLine = indexOfLine;
         }
 
         public override string ToString()

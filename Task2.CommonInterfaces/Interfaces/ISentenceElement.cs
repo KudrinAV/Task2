@@ -10,8 +10,8 @@ namespace Task2.Contracts.Interfaces
     public interface ISentenceElement
     {
         String Value { get; }
-        int IndexOfLine { get; }
 
+        int GetIndexOfLine(ISentence current);
         Symbol ToSymbols();
     }
 }

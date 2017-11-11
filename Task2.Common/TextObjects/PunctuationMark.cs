@@ -14,17 +14,14 @@ namespace Task2.CommonClasses.Classes
 
         public string Value { get; private set; }
 
-        public int IndexOfLine { get; private set; }
-
         public PunctuationMark(string value)
         {
             Value = value;
         }
 
-        public PunctuationMark(string value, int indexOfLine)
+        public int GetIndexOfLine(ISentence current)
         {
-            Value = value;
-            IndexOfLine = indexOfLine;
+            return current.IndexOfLine;
         }
 
         public Symbol ToSymbols()

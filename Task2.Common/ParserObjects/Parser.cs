@@ -50,7 +50,6 @@ namespace Task2.CommonClasses.ParserObj
                     {
                         if (Regex.Replace(line.Trim(), @"\s+", @" ") != string.Empty)
                         {
-
                             line = notFinishedSentence + " " + line;
 
                             var sentences = _lineToSentences.Split(line).Select(x => Regex.Replace(x.Trim(), @"\s+", @" ")).ToArray();
@@ -75,5 +74,31 @@ namespace Task2.CommonClasses.ParserObj
             }   
             return resultText;
         }
+
+        public IText ParseTextForTask2(string path)
+        {
+            IText resultText = new Text();
+            string line;
+
+            using (StreamReader streamReader = new StreamReader(path))
+            {
+                try
+                {
+                    int indexOfLine = 0;
+                    while ((line = streamReader.ReadLine()) != null)
+                    {
+                        resultText.Sentences.Add(ParseSentence(line));
+                        resultText.Sentences.Last().SetIndexOfLine(indexOfLine);
+                        indexOfLine++;
+                     }
+                }
+                catch (IOException e)
+                {
+                    Console.WriteLine(e.Data.ToString());
+                }
+            }
+            return resultText;
+        }
+
     }
 }
