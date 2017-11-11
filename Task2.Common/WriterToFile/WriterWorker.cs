@@ -32,13 +32,24 @@ namespace Task2.CommonClasses.WriterToFile
             }
         }
 
-        public static void WriteAllInterrogativeQuestions(IText text)
+        public static void WriteAllInterrogativeSentence(IText text)
         {
-            using (StreamWriter sw = new StreamWriter("../testAllInterrogativeQuestions.txt", false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter("../testAllInterrogativeSentence.txt", false, System.Text.Encoding.Default))
             {
                 foreach (var item in text.Sentences)
                 {
                     if(item.IsInterrogativeSentence()) sw.WriteLine(item.ToString());
+                }
+            }
+        }
+
+        public static void WriteAllWordsInInterrogativeSentences(IText text, int lenght)
+        {
+            using (StreamWriter sw = new StreamWriter("../testAllWordsInInterrogativeSentenceByNumber.txt", false, System.Text.Encoding.Default))
+            {
+                foreach (var item in text.FindWordsInInterrogativeSentences(lenght))
+                {
+                    sw.WriteLine(item);
                 }
             }
         }

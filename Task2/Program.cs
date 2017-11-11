@@ -24,7 +24,8 @@ namespace Task2
 
             //WriterWorker.WriteSubjectIndex(textAnalyzer.ToPrintList());
             //WriterWorker.WriteAllTextAscByNumberOfWords(text);
-            //WriterWorker.WriteAllInterrogativeQuestions(text);
+            WriterWorker.WriteAllInterrogativeSentence(text);
+            WriterWorker.WriteAllWordsInInterrogativeSentences(text, 5);
 
             //foreach (var item in textAnalyzer.SubjectIndex)
             //{
