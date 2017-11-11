@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Task2.CommonClasses.ParserObj;
 using Task2.CommonClasses.TextAnalyzer;
+using Task2.CommonClasses.WriterToFile;
 using Task2.Contracts.Interfaces;
 
 namespace Task2
@@ -22,6 +23,7 @@ namespace Task2
 
             ITextAnalyzer textAnalyzer = new TextAnalyzer(text.FindAllWords());
 
+            WriterWorker.WriteSubjectIndex(textAnalyzer.ToPrintList());
             //foreach (var item in textAnalyzer.SubjectIndex)
             //{
             //    Console.WriteLine(item.ToString());
@@ -69,6 +71,5 @@ namespace Task2
             //}
 
         }
-
     }
 }

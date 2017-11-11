@@ -52,6 +52,7 @@
     <Compile Include="TextObjects\Text.cs" />
     <Compile Include="TextObjects\Word.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WriterToFile\WriterWorker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
