@@ -16,10 +16,19 @@ namespace Task2.CommonClasses.Classes
 
         public string Value { get; private set; }
 
+        public int IndexOfLine { get; private set; }
+
         public Word(string value)
         {
             Value = value;
             Lenght = value.Length;
+        }
+
+        public Word(string value, int indexOfLine)
+        {
+            Value = value;
+            Lenght = value.Length;
+            IndexOfLine = indexOfLine;
         }
 
         public bool IsAVowel()

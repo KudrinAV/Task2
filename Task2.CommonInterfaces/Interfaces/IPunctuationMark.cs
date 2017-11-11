@@ -10,6 +10,5 @@ namespace Task2.Contracts.Interfaces
     public interface IPunctuationMark : ISentenceElement
     {
         bool IsEndMark { get; }
-        Symbol Symbols { get; }
     }
 }
