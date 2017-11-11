@@ -27,7 +27,7 @@ namespace Task2
             //WriterWorker.WriteAllInterrogativeSentence(text);
             //WriterWorker.WriteAllWordsInInterrogativeSentences(text, 5);
             //WriterWorker.WriteTextWithoutWordOfSetLength(text, 4);
-
+            WriterWorker.WriteSentenceThatReplacedWordToSubstring(text, 0, 3, "this is new replaced, reddit did it not me");
         }
     }
 }

@@ -65,6 +65,12 @@ namespace Task2.CommonClasses.WriterToFile
             }
         }
 
-       //public static void 
+       public static void WriteSentenceThatReplacedWordToSubstring(IText text, int index, int lenght, string subString)
+        {
+            using (StreamWriter sw = new StreamWriter("../testReplacedWordToSubString.txt", false, System.Text.Encoding.Default))
+            {
+                sw.WriteLine(text.GetTheSentenceToReplaceWordOnSubString(index, 3, subString));
+            }
+        } 
     }
 }
