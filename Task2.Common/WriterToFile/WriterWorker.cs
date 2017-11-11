@@ -31,5 +31,16 @@ namespace Task2.CommonClasses.WriterToFile
                 }
             }
         }
+
+        public static void WriteAllInterrogativeQuestions(IText text)
+        {
+            using (StreamWriter sw = new StreamWriter("../testAllInterrogativeQuestions.txt", false, System.Text.Encoding.Default))
+            {
+                foreach (var item in text.Sentences)
+                {
+                    if(item.IsInterrogativeSentence()) sw.WriteLine(item.ToString());
+                }
+            }
+        }
     }
 }

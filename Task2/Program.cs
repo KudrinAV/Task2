@@ -23,7 +23,9 @@ namespace Task2
             ITextAnalyzer textAnalyzer = new TextAnalyzer(text.FindAllWords());
 
             //WriterWorker.WriteSubjectIndex(textAnalyzer.ToPrintList());
-            WriterWorker.WriteAllTextAscByNumberOfWords(text);
+            //WriterWorker.WriteAllTextAscByNumberOfWords(text);
+            //WriterWorker.WriteAllInterrogativeQuestions(text);
+
             //foreach (var item in textAnalyzer.SubjectIndex)
             //{
             //    Console.WriteLine(item.ToString());
