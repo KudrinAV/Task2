@@ -26,7 +26,7 @@ namespace Task2
             //WriterWorker.WriteAllTextAscByNumberOfWords(text);
             //WriterWorker.WriteAllInterrogativeSentence(text);
             //WriterWorker.WriteAllWordsInInterrogativeSentences(text, 5);
-            
+            //WriterWorker.WriteTextWithoutWordOfSetLength(text, 4);
 
         }
     }

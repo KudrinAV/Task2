@@ -28,9 +28,11 @@ namespace Task2.CommonClasses.TextObjects
             return finding;
         }
 
-        public void GetTheSentenceToReplaceWordOnSubString(int index, int length, string subString)
+        public ISentence GetTheSentenceToReplaceWordOnSubString(int index, int length, string subString)
         {
-            Sentences.ElementAt(index).ReplaceWordForSubstring(length, subString);
+            ISentence resultSentence = Sentences.ElementAt(index);
+            resultSentence.ReplaceWordForSubstring(length, subString);
+            return resultSentence;
         }
 
         public IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc()

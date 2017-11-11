@@ -13,7 +13,7 @@ namespace Task2.Contracts.Interfaces
         
         IEnumerable<string> FindWordsInInterrogativeSentences(int length);
         IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc();
-        void GetTheSentenceToReplaceWordOnSubString(int index, int length, string subString);
+        ISentence GetTheSentenceToReplaceWordOnSubString(int index, int length, string subString);
         IEnumerable<IGrouping<string, int>> FindAllWords();
         List<ISentence> DeleteWordsOnConsonantByLength(int length);
     }

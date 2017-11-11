@@ -56,13 +56,15 @@ namespace Task2.CommonClasses.WriterToFile
 
         public static void WriteTextWithoutWordOfSetLength(IText text, int lenght)
         {
-            using (StreamWriter sw = new StreamWriter("../testAllWordsInInterrogativeSentenceByNumber.txt", false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter("../testWithoutWordsOnConsonantOfSet.txt", false, System.Text.Encoding.Default))
             {
-                foreach (var item in text.Sentences)
+                foreach (var item in text.DeleteWordsOnConsonantByLength(lenght))
                 {
-                    sw.WriteLine(item.DeleteWordOnConsonant(lenght)
+                    sw.WriteLine(item);
                 }
             }
         }
+
+       //public static void 
     }
 }
