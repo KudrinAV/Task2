@@ -17,14 +17,13 @@ namespace Task2
         {
 
             Parser myParser = new Parser();
-            StreamReader streamReader = new StreamReader(@"..\test.txt");
             IText text = new CommonClasses.TextObjects.Text();
-            text = myParser.ParseText(streamReader);
+            text = myParser.ParseText(@"..\test.txt");
 
             ITextAnalyzer textAnalyzer = new TextAnalyzer(text.FindAllWords());
 
             //WriterWorker.WriteSubjectIndex(textAnalyzer.ToPrintList());
-            WriterWorker.WriteAllText(text);
+            WriterWorker.WriteAllTextAscByNumberOfWords(text);
             //foreach (var item in textAnalyzer.SubjectIndex)
             //{
             //    Console.WriteLine(item.ToString());

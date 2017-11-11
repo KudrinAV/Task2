@@ -36,45 +36,43 @@ namespace Task2.CommonClasses.ParserObj
         }
        
 
-        public IText ParseText(StreamReader streamReader)
+        public IText ParseText(string path)
         {
             IText resultText = new Text();
             string line;
             string notFinishedSentence = null;
 
-            try
+            using (StreamReader streamReader = new StreamReader(path))
             {
-                while ((line = streamReader.ReadLine()) != null)
+                try
                 {
-                    if (Regex.Replace(line.Trim(), @"\s+", @" ") != string.Empty)
+                    while ((line = streamReader.ReadLine()) != null)
                     {
-
-                        line = notFinishedSentence + " " + line;
-
-                        var sentences = _lineToSentences.Split(line).Select(x => Regex.Replace(x.Trim(), @"\s+", @" ")).ToArray();
-
-                        if (sentences.Last() != string.Empty)
+                        if (Regex.Replace(line.Trim(), @"\s+", @" ") != string.Empty)
                         {
-                            resultText.Sentences.AddRange(sentences.Where(x => x != sentences.Last() && x != string.Empty).Select(ParseSentence));
-                            notFinishedSentence = sentences.Last();
-                        }
-                        else
-                        {
-                            resultText.Sentences.AddRange(sentences.Where(x => x != string.Empty).Select(ParseSentence));
-                            notFinishedSentence = null;
+
+                            line = notFinishedSentence + " " + line;
+
+                            var sentences = _lineToSentences.Split(line).Select(x => Regex.Replace(x.Trim(), @"\s+", @" ")).ToArray();
+
+                            if (sentences.Last() != string.Empty)
+                            {
+                                resultText.Sentences.AddRange(sentences.Where(x => x != sentences.Last() && x != string.Empty).Select(ParseSentence));
+                                notFinishedSentence = sentences.Last();
+                            }
+                            else
+                            {
+                                resultText.Sentences.AddRange(sentences.Where(x => x != string.Empty).Select(ParseSentence));
+                                notFinishedSentence = null;
+                            }
                         }
                     }
                 }
-            }
-            catch (IOException e)
-            {
-                Console.WriteLine(e.Data.ToString());
-            }
-            finally
-            {
-                streamReader.Close();
-                streamReader.Dispose();
-            }
+                catch (IOException e)
+                {
+                    Console.WriteLine(e.Data.ToString());
+                }
+            }   
             return resultText;
         }
     }
