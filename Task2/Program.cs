@@ -23,7 +23,8 @@ namespace Task2
 
             ITextAnalyzer textAnalyzer = new TextAnalyzer(text.FindAllWords());
 
-            WriterWorker.WriteSubjectIndex(textAnalyzer.ToPrintList());
+            //WriterWorker.WriteSubjectIndex(textAnalyzer.ToPrintList());
+            WriterWorker.WriteAllText(text);
             //foreach (var item in textAnalyzer.SubjectIndex)
             //{
             //    Console.WriteLine(item.ToString());
