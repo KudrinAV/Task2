@@ -9,8 +9,6 @@ namespace Task2.CommonClasses.TextObjects
 {
     public class Sentence : ISentence
     {
-        private char[] _vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
-
         public List<ISentenceElement> Elements { get; private set; }
 
         public int GetNumberOfWords()
@@ -67,10 +65,12 @@ namespace Task2.CommonClasses.TextObjects
         private IEnumerable<ISentenceElement> _findWordOnConsonant(int length)
         {
             var finding = from element in Elements
-                          group element by element is IWord && element.Value.Length == length && IsAVowel(element.Value.ToLower().First()) into wordGroup
+                          group element by element is IWord && element.Value.Length == length into wordGroup
                           where wordGroup.Key
                           from word in wordGroup
-                          select word;
+                          let item =  (IWord)word
+                          where item.IsAVowel()
+                          select item;
             return finding;
         }
 
@@ -80,18 +80,6 @@ namespace Task2.CommonClasses.TextObjects
             {
                 Elements.Remove(item);
             }
-        }
-
-        private bool IsAVowel(char letter)
-        {
-            foreach (var item in _vowels)
-            {
-                if (letter == item)
-                {
-                    return true;
-                }
-            }
-            return false;
         }
     }
 }

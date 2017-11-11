@@ -11,6 +11,7 @@ namespace Task2.Contracts.Interfaces
     {
         int Lenght { get; }
 
+        bool IsAVowel();
         Symbol ToSymbols();
     }
 }

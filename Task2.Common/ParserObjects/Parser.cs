@@ -15,11 +15,11 @@ namespace Task2.CommonClasses.ParserObj
 {
     public class Parser : IParser
     {
-        private Regex _lineToSentences = new Regex(@"([\w\s\-\,\'\~\:\(\)\""]+[\.\?\!]{3})|([\w\s\-\,\'\~\:\(\)\""]+[(\?\!)]{2})|([\w\s\-\,\'\~\:\(\)\""]+[\.\!\?]{1})");
+        private Regex _lineToSentences = new Regex(@"([\w\s-,'~:\(\)\""]+[\.\?!]{1,3})");
 
-        private Regex _sentenceToElements = new Regex(@"(\[)|([\w\']+)|(\"")|([,])|(\])|(\~)|([\.\!\?]{3})|([\!\?]{2})|([\.\!\?]{1})|(\~)");
+        private Regex _sentenceToElements = new Regex(@"(\[)|([\w']+)|(\"")|(,)|(])|(~)|([\.\!\?]{3})|([\!\?]{2})|([\.\!\?]{1})|(:)");
 
-    
+
         public ISentence ParseSentence(string sentence)
         {
             var resultSentence = new Sentence();
@@ -27,13 +27,14 @@ namespace Task2.CommonClasses.ParserObj
             Func<string, ISentenceElement> toISentenceElement =
                 item => !PunctuationMarksConstants.AllSentenceMarks.Contains(item) ? (ISentenceElement)new Word(item) : (ISentenceElement)new PunctuationMark(item);
 
-            foreach(Match item in _sentenceToElements.Matches(sentence))
+            foreach (Match item in _sentenceToElements.Matches(sentence))
             {
                 resultSentence.Elements.Add(toISentenceElement(item.Value.Trim()));
             }
-            
+
             return resultSentence;
         }
+       
 
         public IText ParseText(StreamReader streamReader)
         {
@@ -44,22 +45,22 @@ namespace Task2.CommonClasses.ParserObj
             try
             {
                 while ((line = streamReader.ReadLine()) != null)
-                { 
+                {
                     if (Regex.Replace(line.Trim(), @"\s+", @" ") != string.Empty)
                     {
-                        
+
                         line = notFinishedSentence + " " + line;
 
                         var sentences = _lineToSentences.Split(line).Select(x => Regex.Replace(x.Trim(), @"\s+", @" ")).ToArray();
-                        
-                        if(sentences.Last() != string.Empty)
+
+                        if (sentences.Last() != string.Empty)
                         {
-                            resultText.Sentences.AddRange(sentences.Where(x => x != sentences.Last() && x!= string.Empty).Select(ParseSentence));
+                            resultText.Sentences.AddRange(sentences.Where(x => x != sentences.Last() && x != string.Empty).Select(ParseSentence));
                             notFinishedSentence = sentences.Last();
-                            }
+                        }
                         else
                         {
-                            resultText.Sentences.AddRange(sentences.Where(x=> x != string.Empty).Select(ParseSentence));
+                            resultText.Sentences.AddRange(sentences.Where(x => x != string.Empty).Select(ParseSentence));
                             notFinishedSentence = null;
                         }
                     }
@@ -68,7 +69,6 @@ namespace Task2.CommonClasses.ParserObj
             catch (IOException e)
             {
                 Console.WriteLine(e.Data.ToString());
-                streamReader.Close();
             }
             finally
             {

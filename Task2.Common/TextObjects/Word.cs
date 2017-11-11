@@ -10,6 +10,8 @@ namespace Task2.CommonClasses.Classes
 {
     public class Word : IWord
     {
+        private char[] _vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
+        
         public int Lenght { get; private set; }
 
         public string Value { get; private set; }
@@ -20,6 +22,17 @@ namespace Task2.CommonClasses.Classes
             Lenght = value.Length;
         }
 
+        public bool IsAVowel()
+        {
+            foreach(var item in _vowels)
+            {
+                if (Value.ToLower().First() == item)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         public Symbol ToSymbols()
         {

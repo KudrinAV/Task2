@@ -27,10 +27,10 @@ namespace Task2
             //    Console.WriteLine(item.ToString());
             //}
 
-            foreach (var item in textAnalyzer.ToPrintList())
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in textAnalyzer.ToPrintList())
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             //Console.WriteLine(text.Sentences.ElementAt(10).ToString());
             //text.GetTheSentenceToReplaceWordOnSubString(index: 10, length: 4, subString: " kek lol cheburek i kek, work pls ");
@@ -44,7 +44,7 @@ namespace Task2
 
 
 
-            //foreach(var item in text.Sentences)
+            //foreach (var item in text.Sentences)
             //{
             //    Console.WriteLine(item.GetNumberOfWords());
             //    Console.WriteLine(item.ToString());
@@ -52,6 +52,7 @@ namespace Task2
             //    Console.WriteLine(item.GetNumberOfWords());
             //    Console.WriteLine(item.ToString());
             //    Console.WriteLine();
+            //}
 
             //}
             //foreach (var item in text.FindWordsInInterrogativeSentences(4))
@@ -64,13 +65,7 @@ namespace Task2
             //}
             //foreach (var item in text.Sentences)
             //{
-            //    Console.WriteLine(item.IsInterrogativeSentence());
-            //    Console.WriteLine(item.GetNumberOfWords());
-            //    foreach (var temp in item.Elements)
-            //    {
-            //        Console.Write(temp.Value + "  ");
-            //    }
-            //    Console.WriteLine();
+            //    void kek = item.IsInterrogativeSentence() ? Console.WriteLine(item.ToString()) : Console.WriteLine("hello");
             //}
 
         }
