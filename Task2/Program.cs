@@ -20,6 +20,7 @@ namespace Task2
             IText text = new CommonClasses.TextObjects.Text();
             text = myParser.ParseText(@"..\testToEdit.txt");
 
+            WriterWorker.WriteToFileFlexible(iterator: text.Sentences, path: "../textFlexAllTextBySentences.txt");
             //WriterWorker.WriteToFileFlexible(iterator: text.FindWordsInInterrogativeSentences(4), path: "../textFlexibleWordsInInterrogativeSentences.txt");
             //WriterWorker.WriteToFileFlexible(iterator: text.ShowAllSentncesSortedByNumberOfWordsAsc(), path: "../textFlexibleAllSentencesSortedByNumberOfWordsAsc.txt");
             //WriterWorker.WriteToFileFlexible(iterator: text.DeleteWordsOnConsonantByLength(4), path: "../textFlexibaleDeletedWordOnConsonant.txt");
@@ -31,14 +32,15 @@ namespace Task2
             //WriterWorker.WriteSentenceThatReplacedWordToSubstring(text: text, index: 0, lenght: 4, subString: "THIS IS NEW REPLACEMENT, THANK YOU ");
 
 
-            IText textForSubjectIndex = myParser.ParseTextForTask2(@"../testToEdit.txt");
-            ITextAnalyzer textAnalyzerForLines = new TextAnalyzer(textForSubjectIndex.FindAllWords(), 10);
-            WriterWorker.WriteToFileFlexible(textAnalyzerForLines.ToPrintListForPages(), path: "../testFlexibleSubjectIndexForPages.txt");
-            WriterWorker.WriteToFileFlexible(textAnalyzerForLines.ToPrintListForSentences(), path: "../testFlexibleSubjectindexForSentences.txt");
-            textForSubjectIndex = myParser.ParseTextForTask2(@"../testPiper.txt");
-            textAnalyzerForLines = new TextAnalyzer(textForSubjectIndex.FindAllWords());
-            WriterWorker.WriteToFileFlexible(textAnalyzerForLines.ToPrintListForSentences(), path: "../testFlexibleSubjectindexForSentencesPiper.txt");
-            //WriterWorker.WriteSubjectIndexForPages(textAnalyzerForLines.ToPrintListForPages());
+            //Task 2
+
+            //IText textForSubjectIndex = myParser.ParseTextForTask2(@"../testToEdit.txt");
+            //ITextAnalyzer textAnalyzerForLines = new TextAnalyzer(textForSubjectIndex.FindAllWords(), 10);
+            //WriterWorker.WriteToFileFlexible(textAnalyzerForLines.ToPrintListForPages(), path: "../testFlexibleSubjectIndexForPages.txt");
+            //WriterWorker.WriteToFileFlexible(textAnalyzerForLines.ToPrintListForSentences(), path: "../testFlexibleSubjectindexForSentences.txt");
+            //textForSubjectIndex = myParser.ParseTextForTask2(@"../testPiper.txt");
+            //textAnalyzerForLines = new TextAnalyzer(textForSubjectIndex.FindAllWords());
+            //WriterWorker.WriteToFileFlexible(textAnalyzerForLines.ToPrintListForSentences(), path: "../testFlexibleSubjectindexForSentencesPiper.txt");
         }
     }
 }
