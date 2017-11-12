@@ -19,8 +19,8 @@ namespace Task2.Contracts.Structs
 
         public override string ToString()
         {
-            string str = CountOnText.ToString()+":";
-            for(int i=0; i<OnWhichLinesMentioned.Count(); i++)
+            string str = CountOnText.ToString() + ":";
+            for (int i = 0; i < OnWhichLinesMentioned.Count(); i++)
             {
                 str += " " + (OnWhichLinesMentioned[i] + 1).ToString();
             }
@@ -41,9 +41,9 @@ namespace Task2.Contracts.Structs
         public int[] OnPage(int page)
         {
             int[] pages = new int[OnWhichLinesMentioned.Count()];
-            for(int i=0; i<OnWhichLinesMentioned.Count(); i++)
+            for (int i = 0; i < OnWhichLinesMentioned.Count(); i++)
             {
-                pages[i] = (OnWhichLinesMentioned[i] + 1) / page +1 ;
+                pages[i] = (OnWhichLinesMentioned[i] + 1) / page + 1;
             }
             return pages.Distinct().ToArray();
         }

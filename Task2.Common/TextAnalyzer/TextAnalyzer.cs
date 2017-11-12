@@ -12,7 +12,7 @@ namespace Task2.CommonClasses.TextAnalyzer
     {
         public Dictionary<string, Pair> SubjectIndex { get; private set; }
         private int _page;
-       
+
 
         public TextAnalyzer(IEnumerable<IGrouping<string, int>> data)
         {
@@ -42,7 +42,7 @@ namespace Task2.CommonClasses.TextAnalyzer
             string temp = null;
             foreach (var item in sorting)
             {
-                if(item.Key.First().ToString().ToLower()!= temp)
+                if (item.Key.First().ToString().ToLower() != temp)
                 {
                     strList.Add(item.Key.First().ToString().ToUpper());
                     temp = item.Key.First().ToString();

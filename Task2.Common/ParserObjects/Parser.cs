@@ -34,7 +34,7 @@ namespace Task2.CommonClasses.ParserObj
 
             return resultSentence;
         }
-       
+
 
         public IText ParseText(string path)
         {
@@ -71,7 +71,7 @@ namespace Task2.CommonClasses.ParserObj
                 {
                     Console.WriteLine(e.Data.ToString());
                 }
-            }   
+            }
             return resultText;
         }
 
@@ -90,7 +90,7 @@ namespace Task2.CommonClasses.ParserObj
                         resultText.Sentences.Add(ParseSentence(line));
                         resultText.Sentences.Last().SetIndexOfLine(indexOfLine);
                         indexOfLine++;
-                     }
+                    }
                 }
                 catch (IOException e)
                 {

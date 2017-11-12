@@ -11,7 +11,7 @@ namespace Task2.CommonClasses.TextObjects
     public class Text : IText
     {
         public List<ISentence> Sentences { get; private set; }
-        
+
         public IEnumerable<string> FindWordsInInterrogativeSentences(int length)
         {
             var finding = from sentence in Sentences
@@ -24,7 +24,7 @@ namespace Task2.CommonClasses.TextObjects
                           from word in wordGroup
                           group word by word.Value.ToLower() into result
                           select result.Key;
-                
+
             return finding;
         }
 
@@ -65,7 +65,7 @@ namespace Task2.CommonClasses.TextObjects
         public List<ISentence> DeleteWordsOnConsonantByLength(int length)
         {
             List<ISentence> resultList = Sentences;
-            foreach(var item in resultList)
+            foreach (var item in resultList)
             {
                 item.DeleteWordOnConsonant(length);
             }

@@ -16,7 +16,7 @@ namespace Task2.CommonClasses.ParserHelpers
 
         public static string[] OpenBraketsMarks = { "[", "(", "{" };
 
-        public static string[] CloseBraketsMarks = { "]", ")" , "}"};
+        public static string[] CloseBraketsMarks = { "]", ")", "}" };
 
         public static string[] AllSentenceMarks = { "...", "!!!", "???", "\"", ".", "?", "!", "!?", "?!", "'", ",", ";", ":", "[", "(", "{", "]", ")", "}", "~", ":" };
     }

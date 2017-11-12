@@ -68,7 +68,7 @@ namespace Task2.CommonClasses.TextObjects
         public override string ToString()
         {
             string resultString = null;
-            foreach(var item in Elements)
+            foreach (var item in Elements)
             {
                 resultString = item != Elements.First() ? item is IWord ? resultString += " " + item.Value : resultString += item.Value : resultString += item.Value;
             }
@@ -81,7 +81,7 @@ namespace Task2.CommonClasses.TextObjects
                           group element by element is IWord && element.Value.Length == length into wordGroup
                           where wordGroup.Key
                           from word in wordGroup
-                          let item =  (IWord)word
+                          let item = (IWord)word
                           where !item.IsAVowel()
                           select item;
             return finding;

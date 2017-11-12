@@ -9,7 +9,7 @@ namespace Task2.Contracts.Interfaces
     public interface ISentence
     {
         List<ISentenceElement> Elements { get; }
-        int IndexOfLine {get;}
+        int IndexOfLine { get; }
 
         int GetNumberOfWords();
         bool IsInterrogativeSentence();

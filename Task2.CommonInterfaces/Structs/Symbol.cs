@@ -10,7 +10,7 @@ namespace Task2.Contracts.Structs
     {
         Char[] Chars;
 
-        public Symbol (string chars)
+        public Symbol(string chars)
         {
             Chars = chars.ToCharArray();
         }

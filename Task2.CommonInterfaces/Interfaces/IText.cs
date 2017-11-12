@@ -10,7 +10,7 @@ namespace Task2.Contracts.Interfaces
     public interface IText
     {
         List<ISentence> Sentences { get; }
-        
+
         IEnumerable<string> FindWordsInInterrogativeSentences(int length);
         IEnumerable<ISentence> ShowAllSentncesSortedByNumberOfWordsAsc();
         ISentence GetTheSentenceToReplaceWordOnSubString(int index, int length, string subString);

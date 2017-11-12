@@ -27,7 +27,7 @@ namespace Task2
             //WriterWorker.WriteToFileFlexible(iterator: text.ShowAllSentncesSortedByNumberOfWordsAsc(), path: "../textFlexibleAllSentencesSortedByNumberOfWordsAsc.txt");
             //WriterWorker.WriteToFileFlexible(iterator: text.DeleteWordsOnConsonantByLength(4), path: "../textFlexibaleDeletedWordOnConsonant.txt");
             //WriterWorker.WriteSentenceThatReplacedWordToSubstring(sentence: text.GetTheSentenceToReplaceWordOnSubString(index: 0, length: 5, subString: "THIS IS NEW REPLACEMENT, THANK YOU "), path: "../textWordToSubString.txt");
-            
+
             //Task 2
 
             //IText textForSubjectIndex = myParser.ParseTextForTask2(@"../testToEdit.txt");
