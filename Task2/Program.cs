@@ -31,11 +31,8 @@ namespace Task2
             //WriterWorker.WriteTextWithoutWordOfSetLength(text, 4);
             //WriterWorker.WriteSentenceThatReplacedWordToSubstring(text, 0, 3, "this is new replaced, reddit did it not me");
 
-            ITextAnalyzer textAnalyzerForLines = new TextAnalyzer(textForSubjectIndex.FindAllWords());
-            foreach(var item in textAnalyzerForLines.ToPrintList())
-            {
-                Console.WriteLine(item.ToString());
-            }
+            ITextAnalyzer textAnalyzerForLines = new TextAnalyzer(textForSubjectIndex.FindAllWords(), 10);
+            WriterWorker.WriteSubjectIndexForPages(textAnalyzerForLines.ToPrintListForPages());
         }
     }
 }

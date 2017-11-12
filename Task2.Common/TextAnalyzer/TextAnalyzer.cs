@@ -11,6 +11,7 @@ namespace Task2.CommonClasses.TextAnalyzer
     public class TextAnalyzer : ITextAnalyzer
     {
         public Dictionary<string, Pair> SubjectIndex { get; private set; }
+        private int _page;
        
 
         public TextAnalyzer(IEnumerable<IGrouping<string, int>> data)
@@ -20,10 +21,21 @@ namespace Task2.CommonClasses.TextAnalyzer
             {
                 SubjectIndex.Add(item.Key, new Pair(item.Count(), item.Distinct().ToArray()));
             }
+            _page = 20;
         }
-        
 
-        public List<string> ToPrintList()
+        public TextAnalyzer(IEnumerable<IGrouping<string, int>> data, int page)
+        {
+            SubjectIndex = new Dictionary<string, Pair>();
+            foreach (var item in data)
+            {
+                SubjectIndex.Add(item.Key, new Pair(item.Count(), item.Distinct().ToArray()));
+            }
+            _page = page;
+        }
+
+
+        public List<string> ToPrintListForSentences()
         {
             List<string> strList = new List<string>();
             var sorting = SubjectIndex.OrderBy(x => x.Key);
@@ -36,6 +48,24 @@ namespace Task2.CommonClasses.TextAnalyzer
                     temp = item.Key.First().ToString();
                 }
                 strList.Add(String.Format("{0,-20}{1,-50}", item.Key, item.Value.ToString()));
+            }
+
+            return strList;
+        }
+
+        public List<string> ToPrintListForPages()
+        {
+            List<string> strList = new List<string>();
+            var sorting = SubjectIndex.OrderBy(x => x.Key);
+            string temp = null;
+            foreach (var item in sorting)
+            {
+                if (item.Key.First().ToString().ToLower() != temp)
+                {
+                    strList.Add(item.Key.First().ToString().ToUpper());
+                    temp = item.Key.First().ToString();
+                }
+                strList.Add(String.Format("{0,-20}{1,-50}", item.Key, item.Value.ToString(_page)));
             }
 
             return strList;

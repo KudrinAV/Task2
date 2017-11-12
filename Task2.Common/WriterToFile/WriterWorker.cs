@@ -10,9 +10,20 @@ namespace Task2.CommonClasses.WriterToFile
 {
     public static class WriterWorker
     {
-        public static void WriteSubjectIndex(List<string> list)
+        public static void WriteSubjectIndexForSentences(List<string> list)
         {
-            using (StreamWriter sw = new StreamWriter("../testWriter.txt", false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter("../testSubjectIndexForSentences.txt", false, System.Text.Encoding.Default))
+            {
+                foreach (var item in list)
+                {
+                    sw.WriteLine(item);
+                }
+            }
+        }
+
+        public static void WriteSubjectIndexForPages(List<string> list)
+        {
+            using (StreamWriter sw = new StreamWriter("../testSubjectIndexForPages.txt", false, System.Text.Encoding.Default))
             {
                 foreach (var item in list)
                 {

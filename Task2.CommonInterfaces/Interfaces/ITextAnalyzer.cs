@@ -11,7 +11,7 @@ namespace Task2.Contracts.Interfaces
     {
         Dictionary<string, Pair> SubjectIndex { get; }
 
-        List<string> ToPrintList();
-        
+        List<string> ToPrintListForSentences();
+        List<string> ToPrintListForPages();
     }
 }
