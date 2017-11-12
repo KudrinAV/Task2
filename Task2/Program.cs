@@ -27,8 +27,9 @@ namespace Task2
             //WriterWorker.WriteAllTextAscByNumberOfWords(text);
             //WriterWorker.WriteAllInterrogativeSentence(text);
             //WriterWorker.WriteAllWordsInInterrogativeSentences(text, 5);
-            //WriterWorker.WriteTextWithoutWordOfSetLength(text, 4);
-            WriterWorker.WriteSentenceThatReplacedWordToSubstring(text: text,index: 0, lenght: 4, subString: "dasdasdasd");
+            //WriterWorker.WriteTextWithoutWordOfSetLength(text, 5);
+            //WriterWorker.WriteSentenceThatReplacedWordToSubstring(text: text, index: 0, lenght: 4, subString: "THIS IS NEW REPLACEMENT, THANK YOU ");
+            WriterWorker.WriteAllTextBySentences(text);
 
             //IText textForSubjectIndex = myParser.ParseTextForTask2(@"../test.txt");
             //ITextAnalyzer textAnalyzerForLines = new TextAnalyzer(textForSubjectIndex.FindAllWords(), 10);

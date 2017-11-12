@@ -10,6 +10,17 @@ namespace Task2.CommonClasses.WriterToFile
 {
     public static class WriterWorker
     {
+        public static void WriteAllTextBySentences(IText text)
+        {
+            using (StreamWriter sw = new StreamWriter("../AllTextBySentences.txt", false, System.Text.Encoding.Default))
+            {
+                foreach (var item in text.Sentences)
+                {
+                    sw.WriteLine(item.ToString());
+                }
+            }
+        }
+
         public static void WriteSubjectIndexForSentences(List<string> list)
         {
             using (StreamWriter sw = new StreamWriter("../testSubjectIndexForSentences.txt", false, System.Text.Encoding.Default))
