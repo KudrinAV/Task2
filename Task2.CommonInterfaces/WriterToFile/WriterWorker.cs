@@ -11,7 +11,7 @@ namespace Task2.Contracts.WriterToFile
 {
     public static class WriterWorker
     {
-        public static void WriteAllInterrogativeSentence(IText text)
+       public static void WriteAllInterrogativeSentence(IText text)
         {
             using (StreamWriter sw = new StreamWriter("../testAllInterrogativeSentence.txt", false, System.Text.Encoding.Default))
             {
@@ -22,13 +22,11 @@ namespace Task2.Contracts.WriterToFile
             }
         }
 
-       public static void WriteSentenceThatReplacedWordToSubstring(IText text, int index, int lenght, string subString, string path)
+       public static void WriteSentenceThatReplacedWordToSubstring(ISentence sentence, string path)
         {
             using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
             {
-                sw.WriteLine(text.Sentences.ElementAt(index).ToString());
-                sw.WriteLine(string.Empty);
-                sw.WriteLine(text.GetTheSentenceToReplaceWordOnSubString(index, lenght, subString));
+                sw.WriteLine(sentence.ToString());
             }
         } 
 

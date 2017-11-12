@@ -20,18 +20,14 @@ namespace Task2
             IText text = new CommonClasses.TextObjects.Text();
             text = myParser.ParseText(@"..\testToEdit.txt");
 
-            WriterWorker.WriteToFileFlexible(iterator: text.Sentences, path: "../textFlexAllTextBySentences.txt");
+            //Task 1
+
+            //WriterWorker.WriteToFileFlexible(iterator: text.Sentences, path: "../textFlexAllTextBySentences.txt");
             //WriterWorker.WriteToFileFlexible(iterator: text.FindWordsInInterrogativeSentences(4), path: "../textFlexibleWordsInInterrogativeSentences.txt");
             //WriterWorker.WriteToFileFlexible(iterator: text.ShowAllSentncesSortedByNumberOfWordsAsc(), path: "../textFlexibleAllSentencesSortedByNumberOfWordsAsc.txt");
             //WriterWorker.WriteToFileFlexible(iterator: text.DeleteWordsOnConsonantByLength(4), path: "../textFlexibaleDeletedWordOnConsonant.txt");
-            //WriterWorker.WriteToFileFlexible(iterator: text.GetTheSentenceToReplaceWordOnSubString(index: 0, length: 4, subString: "THIS IS NEW REPLACEMENT, THANK YOU "), path: "../textFLexTestWordToSubString");
-
-            //WriterWorker.WriteSubjectIndex(textAnalyzer.ToPrintList());
-            //WriterWorker.WriteAllInterrogativeSentence(text);
-            ////WriterWorker.WriteTextWithoutWordOfSetLength(text, 5);
-            //WriterWorker.WriteSentenceThatReplacedWordToSubstring(text: text, index: 0, lenght: 4, subString: "THIS IS NEW REPLACEMENT, THANK YOU ");
-
-
+            //WriterWorker.WriteSentenceThatReplacedWordToSubstring(sentence: text.GetTheSentenceToReplaceWordOnSubString(index: 0, length: 5, subString: "THIS IS NEW REPLACEMENT, THANK YOU "), path: "../textWordToSubString.txt");
+            
             //Task 2
 
             //IText textForSubjectIndex = myParser.ParseTextForTask2(@"../testToEdit.txt");
