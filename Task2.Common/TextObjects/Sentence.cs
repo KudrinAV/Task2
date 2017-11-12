@@ -82,7 +82,7 @@ namespace Task2.CommonClasses.TextObjects
                           where wordGroup.Key
                           from word in wordGroup
                           let item =  (IWord)word
-                          where item.IsAVowel()
+                          where !item.IsAVowel()
                           select item;
             return finding;
         }
