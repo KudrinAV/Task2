@@ -1,0 +1,689 @@
+1
+100                 2: 12                                             
+1000                1: 12                                             
+10000               1: 12                                             
+102                 1: 56                                             
+124                 1: 70                                             
+18                  1: 74                                             
+2
+20                  1: 6                                              
+22                  1: 87                                             
+24                  1: 36                                             
+24th                1: 72                                             
+280                 1: 94                                             
+5
+5                   1: 6                                              
+5mm                 1: 59                                             
+7
+7                   1: 34                                             
+8
+85                  1: 41                                             
+A
+a                   47: 6 8 12 14 21 28 30 37 39 43 47 48 52 55 59 61 63 66 68 72 76 77 79 87 96 100 102 104
+abandon             2: 63 74                                          
+able                3: 12 52 89                                       
+abnormal            1: 63                                             
+about               5: 14 16 43 61                                    
+according           3: 43 52 74                                       
+acidic              1: 43                                             
+adapted             1: 43                                             
+adding              1: 43                                             
+adjusting           1: 76                                             
+advantage           1: 16                                             
+after               13: 10 22 25 30 36 37 41 58 72 76 80 86 87        
+again               1: 12                                             
+against             2: 6 30                                           
+aggregating         1: 32                                             
+ago                 1: 74                                             
+alkaline            1: 43                                             
+all                 9: 8 12 22 28 32 39 50 76                         
+allowed             1: 74                                             
+along               1: 37                                             
+also                3: 32 43 59                                       
+am                  1: 39                                             
+amongst             1: 34                                             
+amounts             2: 43 89                                          
+an                  8: 32 61 63 65 68 74 89 97                        
+and                 32: 6 12 14 16 30 32 34 39 46 63 66 74 76 87 89 91 100 102 104 111
+android             1: 12                                             
+androids            7: 6 12 19 68 74                                  
+androids'           3: 28 30 52                                       
+animals             2: 14 16                                          
+any                 1: 92                                             
+appeared            3: 30 36 76                                       
+appropriate         3: 32 89                                          
+are                 6: 8 12 30 32 37 39                               
+around              2: 43 59                                          
+as                  12: 10 14 39 43 59 76 77 97                       
+at                  9: 12 32 45 47 61 66 76 92 102                    
+attempt             1: 39                                             
+available           2: 50 76                                          
+away                1: 100                                            
+B
+back                3: 10 63 87                                       
+battle              5: 12 14 63 68 91                                 
+be                  12: 16 19 25 30 32 43 52 59 100                   
+bears               1: 102                                            
+became              2: 96 104                                         
+because             4: 14 16 61 114                                   
+become              2: 39 87                                          
+becomes             2: 30 83                                          
+been                3: 12 39 43                                       
+behind              1: 66                                             
+being               1: 72                                             
+between             1: 46                                             
+big                 1: 59                                             
+bigger              1: 39                                             
+bit                 3: 55 100                                         
+black               2: 1 2                                            
+blast               1: 77                                             
+bloom               1: 86                                             
+blooms              1: 102                                            
+blossomed           1: 58                                             
+blowing             1: 39                                             
+blue                1: 52                                             
+blurry              1: 76                                             
+body                3: 72 76 87                                       
+boils               1: 12                                             
+bottle              4: 8 10                                           
+bottles             1: 8                                              
+brief               1: 72                                             
+bright              1: 46                                             
+broken              1: 8                                              
+brown               4: 96 97 100 107                                  
+bud                 2: 48 52                                          
+building            1: 6                                              
+buildings           1: 43                                             
+burnt               1: 77                                             
+but                 14: 18 19 28 30 39 52 55 59 66 76 77 100          
+by                  8: 12 28 32 39 61 74 97 100                       
+C
+calculating         1: 32                                             
+called              1: 52                                             
+came                2: 52 76                                          
+camera              1: 80                                             
+can                 4: 30 37 39                                       
+candidate           1: 32                                             
+cannot              2: 63 87                                          
+can't               1: 12                                             
+carefully           2: 8 47                                           
+careless            1: 30                                             
+cause               1: 14                                             
+ceased              1: 74                                             
+chances             1: 19                                             
+change              1: 74                                             
+changes             1: 43                                             
+checkup             1: 72                                             
+cleanup             1: 6                                              
+clear               1: 56                                             
+climate             1: 30                                             
+closer              1: 47                                             
+clueless            1: 14                                             
+collected           1: 16                                             
+color               1: 96                                             
+combat              3: 12 16 87                                       
+completely          3: 14 72 87                                       
+concrete            1: 32                                             
+condition           2: 8 43                                           
+conditions          2: 30 89                                          
+confirmed           2: 8 34                                           
+conflict            2: 68 74                                          
+considered          1: 30                                             
+contain             1: 19                                             
+contained           2: 52 68                                          
+contents            1: 66                                             
+continued           6: 43 86 87 100 104 107                           
+correct             2: 32 34                                          
+could               7: 8 16 28 39 59 89                               
+cover               1: 105                                            
+covered             1: 97                                             
+creaking            1: 76                                             
+creators            2: 12 14                                          
+crisp               1: 77                                             
+crumbling           1: 100                                            
+crush               1: 12                                             
+D
+damage              1: 43                                             
+damaged             1: 76                                             
+data                8: 32 39 50 52 66 68 102                          
+database            1: 8                                              
+days                18: 6 30 34 36 41 56 58 66 70 74 87 89 94 97 100 104
+decided             4: 10 25 32 105                                   
+decrypt             1: 66                                             
+deemed              1: 16                                             
+defeat              1: 12                                             
+depriving           1: 37                                             
+destroy             1: 19                                             
+destroyed           1: 77                                             
+destruction         1: 14                                             
+determine           2: 52 89                                          
+diameter            1: 59                                             
+did                 5: 14 28 43 89 102                                
+didn't              3: 30 66 74                                       
+difference          1: 59                                             
+different           1: 52                                             
+disconnected        1: 87                                             
+discovered          2: 4 96                                           
+discoverer          1: 25                                             
+discovery           1: 6                                              
+discussion          1: 25                                             
+do                  7: 12 14 39 43                                    
+documents           1: 43                                             
+doesn't             1: 12                                             
+down                3: 12 45                                          
+drop                1: 104                                            
+dropping            1: 100                                            
+due                 2: 39 59                                          
+during              3: 6 74 87                                        
+E
+either              3: 8 30                                           
+empty               1: 8                                              
+encryption          1: 66                                             
+end                 3: 12 28 43                                       
+ended               1: 39                                             
+enemies             2: 6 30                                           
+enough              1: 23                                             
+entire              1: 97                                             
+entity              1: 74                                             
+environment         2: 14 89                                          
+environmental       1: 43                                             
+escape              1: 39                                             
+even                5: 12 39 66 91 117                                
+evenn               1: 117                                            
+evennn              1: 117                                            
+eventually          2: 52                                             
+everything          2: 39 89                                          
+existence           1: 8                                              
+expanded            1: 97                                             
+experience          1: 61                                             
+experienced         1: 76                                             
+experiment          1: 32                                             
+experimental        1: 74                                             
+explosions          1: 61                                             
+exterminating       1: 6                                              
+extremely           1: 77                                             
+F
+fact                1: 34                                             
+falling             1: 99                                             
+far                 1: 89                                             
+featured            1: 59                                             
+feeling             1: 61                                             
+felt                1: 92                                             
+few                 5: 30 39 66 100 104                               
+fight               1: 12                                             
+fighting            1: 12                                             
+file                1: 30                                             
+filled              1: 14                                             
+finally             1: 72                                             
+find                2: 8 28                                           
+firing              1: 39                                             
+first               3: 6 36 102                                       
+flower              3: 52 76 77                                       
+flowering           1: 61                                             
+flowers             8: 52 58 59 86 91 92                              
+focus               1: 76                                             
+footage             1: 74                                             
+for                 13: 10 12 30 32 39 43 63 68 80 89 100 102         
+forbidden           1: 14                                             
+form                1: 28                                             
+fortunate           1: 77                                             
+found               3: 6 37 102                                       
+four                1: 66                                             
+frequent            1: 104                                            
+from                13: 12 14 32 34 39 43 61 77 89 91                 
+front               1: 76                                             
+fruit               1: 102                                            
+functionality       1: 72                                             
+functioning         1: 74                                             
+furthermore         1: 39                                             
+G
+geography           1: 16                                             
+gigantic            2: 14 43                                          
+glass               3: 8 10                                           
+go                  1: 43                                             
+gone                1: 28                                             
+good                1: 8                                              
+grew                2: 59 91                                          
+ground              1: 72                                             
+grow                2: 43                                             
+growing             3: 32 45 46                                       
+growth              4: 43 87 89                                       
+guarded             1: 66                                             
+guess               1: 66                                             
+guideline           1: 30                                             
+H
+hacking             1: 28                                             
+had                 1: 43                                             
+half                3: 72 76 77                                       
+hand                2: 14 76                                          
+hands               2: 8 105                                          
+happens             1: 102                                            
+hard                2: 39 100                                         
+have                18: 12 22 28 32 39 43 61 74 87 89 94 97 110 114   
+haven't             1: 63                                             
+having              1: 39                                             
+head                1: 76                                             
+heater              1: 100                                            
+heavily             1: 66                                             
+height              1: 37                                             
+hidden              1: 66                                             
+hiding              1: 6                                              
+highly              1: 12                                             
+hindrance           1: 87                                             
+hints               1: 19                                             
+hours               1: 6                                              
+how                 6: 14 19 28 61 63 77                              
+however             11: 8 12 14 16 37 43 63 97 102                    
+hundred             1: 66                                             
+I
+i                   76: 6 8 10 28 30 32 34 37 39 43 45 46 47 50 52 54 59 61 63 65 66 72 74 76 80 87 89 92 96 97 99 100 102 105 107 110 111 112 114
+if                  4: 12 32 43                                       
+important           2: 12 63                                          
+improve             1: 89                                             
+in                  28: 4 6 8 25 26 30 37 39 43 46 47 54 59 63 66 72 76 96 97 102
+incoming            1: 65                                             
+increase            2: 12 37                                          
+increased           1: 37                                             
+indescribable       1: 61                                             
+infinite            2: 22 114                                         
+information         3: 16 32                                          
+initially           1: 97                                             
+insects             3: 37 39 43                                       
+insides             1: 37                                             
+instructions        1: 102                                            
+insufficient        1: 52                                             
+into                5: 8 14 28 52                                     
+investigate         1: 25                                             
+irritation          1: 76                                             
+is                  14: 12 14 18 39 43 61 63 83 100 109               
+isn't               2: 19 82                                          
+issues              1: 14                                             
+issuing             1: 74                                             
+it                  25: 6 10 12 25 30 43 48 52 59 65 66 76 77 83 87 97 100 102
+its                 6: 37 46 66 77 87 100                             
+it's                3: 21 39 61                                       
+J
+job                 1: 82                                             
+joints              1: 72                                             
+K
+kind                1: 52                                             
+kinds               1: 32                                             
+know                2: 28 43                                          
+L
+large               4: 43 59 68 74                                    
+laser               1: 39                                             
+last                1: 87                                             
+later               3: 34 56 70                                       
+layers              1: 66                                             
+learn               2: 39 111                                         
+learned             1: 89                                             
+learnt              1: 12                                             
+leaves              3: 37 39 46                                       
+level               1: 100                                            
+lifeform            1: 87                                             
+lifeforms           5: 12 14 39 63                                    
+like                6: 1 2 6 30 74 76                                 
+limited             2: 32                                             
+lined               1: 8                                              
+little              1: 55                                             
+locate              1: 30                                             
+long                1: 63                                             
+longer              1: 92                                             
+look                3: 43 47 61                                       
+looked              5: 1 2 45 76 102                                  
+looking             3: 63 92 99                                       
+lookup              1: 8                                              
+lost                1: 72                                             
+low                 3: 19 39 100                                      
+luxury              1: 74                                             
+lying               1: 72                                             
+M
+machine             5: 12 39 63 87                                    
+machines            1: 12                                             
+made                2: 6 63                                           
+maintain            2: 43 100                                         
+managed             1: 30                                             
+mankind's           1: 4                                              
+many                1: 4                                              
+material            1: 10                                             
+materials           1: 102                                            
+matter              2: 63 102                                         
+may                 1: 19                                             
+me                  5: 26 66 74 76 79                                 
+methods             1: 102                                            
+minute              1: 43                                             
+mission             4: 63 83 87 109                                   
+month               1: 76                                             
+more                9: 23 54 74 77 91 100 104                         
+most                3: 8 12 32                                        
+motionless          1: 79                                             
+move                1: 76                                             
+much                6: 1 2 14 30 63 76                                
+multiple            6: 8 37 52 97                                     
+multiplying         1: 12                                             
+must                1: 30                                             
+my                  26: 8 32 34 39 50 52 63 66 72 74 76 82 83 87 99 105 109
+N
+necessary           1: 43                                             
+need                1: 66                                             
+needed              1: 28                                             
+network             2: 25 87                                          
+neutral             1: 43                                             
+neutralizer         2: 43 54                                          
+new                 2: 6 39                                           
+next                2: 100 102                                        
+no                  7: 30 39 63 92 100 102                            
+noises              1: 76                                             
+not                 8: 14 28 39 43 74 87 102 109                      
+now                 1: 32                                             
+number              2: 32 59                                          
+numbers             2: 12                                             
+nurtured            1: 59                                             
+nurturing           4: 30 43 63 87                                    
+nutrients           1: 37                                             
+O
+object              3: 47 52 76                                       
+observation         1: 37                                             
+observe             1: 100                                            
+observed            1: 32                                             
+observing           2: 10 80                                          
+occurrence          1: 97                                             
+of                  47: 4 6 8 12 14 25 28 30 32 36 37 43 52 58 59 61 66 72 74 76 77 83 87 89 96 102
+off                 2: 39 63                                          
+oh                  1: 52                                             
+on                  8: 8 14 19 37 39 66 72 89                         
+once                2: 32 91                                          
+one                 4: 4 6 8 72                                       
+ones                4: 52                                             
+only                5: 43 55 59 66 102                                
+onto                2: 30 32                                          
+open                1: 66                                             
+optimistic          1: 97                                             
+or                  3: 8 43 74                                        
+orders              1: 74                                             
+original            1: 87                                             
+other               2: 14 26                                          
+our                 6: 6 12 14 16 30                                  
+ourselves           1: 12                                             
+out                 4: 6 32 39 76                                     
+outside             2: 14 43                                          
+over                5: 12 66 82 109                                   
+overlooked          1: 39                                             
+own                 1: 66                                             
+P
+particular          2: 52 59                                          
+parts               1: 97                                             
+passed              3: 94 97 104                                      
+past                3: 28 66 97                                       
+perhaps             2: 39 43                                          
+pertain             1: 102                                            
+pick                1: 39                                             
+pictures            2: 52 59                                          
+pieces              1: 6                                              
+pink                1: 52                                             
+place               1: 39                                             
+plan                1: 68                                             
+planet              1: 14                                             
+plant               31: 37 39 43 45 52 59 61 63 77 79 80 83 86 87 89 91 96 97 100 102 105 107 110 112
+plants              12: 8 14 16 28 30 32 43 59                        
+plant's             1: 58                                             
+portion             3: 72 77 96                                       
+position            1: 74                                             
+positive            1: 37                                             
+possibilities       1: 32                                             
+possibility         1: 19                                             
+possible            1: 76                                             
+potentially         1: 59                                             
+powered             1: 39                                             
+powerless           1: 79                                             
+precise             2: 30 100                                         
+precisely           2: 39 74                                          
+predicted           1: 76                                             
+predictions         2: 32 34                                          
+pretty              1: 76                                             
+previously          1: 43                                             
+problem             1: 36                                             
+process             1: 80                                             
+programmed          1: 14                                             
+promising           1: 32                                             
+prone               1: 72                                             
+protect             1: 107                                            
+put                 2: 54 100                                         
+Q
+question            1: 47                                             
+R
+rain                4: 41 43 58 70                                    
+reacting            1: 99                                             
+realized            1: 63                                             
+reboot              2: 72 87                                          
+received            1: 65                                             
+recently            1: 61                                             
+reconnect           1: 87                                             
+record              2: 83 87                                          
+recorded            1: 30                                             
+records             2: 28 102                                         
+recovered           2: 43 91                                          
+red                 1: 52                                             
+reference           2: 59 102                                         
+regained            1: 72                                             
+regardless          1: 12                                             
+remained            4: 8 77 97 100                                    
+remaining           1: 74                                             
+rendered            1: 72                                             
+repair              5: 76 80 102 110 112                              
+repaired            1: 87                                             
+repairing           1: 12                                             
+repeat              1: 12                                             
+repeatedly          1: 12                                             
+required            1: 66                                             
+requirement         1: 12                                             
+research            2: 10 14                                          
+resistant           1: 43                                             
+rest                1: 87                                             
+result              2: 14 43                                          
+resumed             1: 80                                             
+retrieved           1: 102                                            
+revealed            2: 8 72                                           
+right               1: 43                                             
+rooms               1: 6                                              
+ruins               1: 4                                              
+run                 1: 63                                             
+S
+sample              1: 39                                             
+sand                3: 1 2 32                                         
+saw                 3: 46 76 99                                       
+say                 1: 102                                            
+scale               2: 68 74                                          
+scene               1: 61                                             
+search              2: 52 102                                         
+searched            1: 50                                             
+searching           1: 30                                             
+secure              1: 89                                             
+see                 2: 37 43                                          
+seeds               10: 8 19 25 28 30 32 34 36 41 94                  
+seeing              1: 77                                             
+seek                1: 63                                             
+seem                1: 87                                             
+seen                1: 97                                             
+selections          1: 32                                             
+self                2: 76 80                                          
+sensors             3: 72 99                                          
+serious             1: 43                                             
+server              1: 39                                             
+servers             2: 28 30                                          
+shabby              1: 8                                              
+share               1: 39                                             
+shared              1: 34                                             
+sheer               1: 12                                             
+shelves             1: 8                                              
+short               1: 66                                             
+shot                2: 21 74                                          
+should              1: 25                                             
+sign                1: 37                                             
+signs               1: 36                                             
+similar             1: 61                                             
+simply              1: 12                                             
+since               2: 30 94                                          
+single              1: 12                                             
+situation           1: 63                                             
+situations          1: 66                                             
+size                3: 39 43                                          
+skies               1: 56                                             
+skilled             1: 12                                             
+slightly            1: 43                                             
+slowly              1: 47                                             
+small               12: 1 2 6 8 37 39 48 59 76 77 86                  
+snow                1: 99                                             
+snowfall            1: 104                                            
+so                  5: 6 30 43 89                                     
+soil                4: 32 34 89                                       
+some                7: 6 10 25 28 30 37 80                            
+something           3: 39 46 99                                       
+soon                1: 39                                             
+sow                 4: 30 32                                          
+sowing              3: 36 41 94                                       
+specified           1: 30                                             
+specks              3: 1 2 8                                          
+spent               1: 6                                              
+splashed            1: 39                                             
+sprouted            1: 34                                             
+stand               1: 76                                             
+start               2: 28 32                                          
+state               1: 87                                             
+stated              1: 30                                             
+storms              1: 89                                             
+strategic           2: 16 39                                          
+strong              1: 89                                             
+sturdier            1: 39                                             
+such                3: 39 66 102                                      
+suffered            1: 43                                             
+sufficient          1: 43                                             
+sure                1: 39                                             
+surely              1: 30                                             
+surface             1: 30                                             
+surfaces            1: 32                                             
+surging             1: 61                                             
+surroundings        1: 77                                             
+T
+take                3: 10 12 76                                       
+taking              1: 8                                              
+tasked              1: 25                                             
+tell                1: 52                                             
+temperature         4: 37 100 104                                     
+temperatures        1: 89                                             
+test                3: 117 118 119                                    
+tested              3: 117 118 119                                    
+testi               3: 117 118 119                                    
+testin              3: 117 118 119                                    
+testing             3: 117 118 119                                    
+than                2: 23 77                                          
+that                33: 6 8 12 14 18 19 25 28 30 34 37 39 43 59 61 65 66 72 76 86 89 96 99 100
+that's              2: 8 39                                           
+the                 87: 6 8 10 12 14 19 25 28 30 32 34 36 37 39 41 43 45 47 52 58 59 61 66 68 72 74 76 77 80 86 87 89 91 94 96 97 100 102 104 105 107
+their               2: 39                                             
+them                7: 8 12 25 32 39 59                               
+themselves          1: 43                                             
+then                4: 12 32 65                                       
+theory              1: 61                                             
+there               4: 19 30 66                                       
+therefore           1: 32                                             
+there's             1: 30                                             
+these               1: 19                                             
+they                10: 4 8 16 28 30 37 39 43                         
+third               1: 72                                             
+this                22: 12 14 30 39 43 52 55 59 61 63 77 83 87 97 110 112
+thoroughly          1: 76                                             
+those               6: 1 2 6 14 43 92                                 
+though              3: 32 59 87                                       
+thousands           1: 12                                             
+three               1: 32                                             
+through             2: 28 50                                          
+thrown              1: 6                                              
+tightly             1: 43                                             
+time                10: 10 12 22 23 39 55 63 80 102 114               
+timeframe           1: 32                                             
+times               1: 97                                             
+tinge               1: 76                                             
+to                  67: 10 12 14 16 19 25 28 30 32 39 43 52 59 61 63 66 74 76 77 83 86 87 89 99 100 102 104 105 107 110
+too                 1: 39                                             
+took                3: 47 59 66                                       
+transform           2: 28 52                                          
+transmission        2: 65 66                                          
+transmissions       1: 66                                             
+trash               1: 6                                              
+tried               4: 39 76 100 102                                  
+troublesome         1: 39                                             
+true                1: 18                                             
+truly               2: 43 63                                          
+try                 1: 32                                             
+turned              1: 76                                             
+two                 1: 66                                             
+type                1: 59                                             
+U
+unable              2: 12 76                                          
+understand          2: 30 111                                         
+understanding       1: 100                                            
+undue               1: 14                                             
+unease              1: 92                                             
+unpleasant          1: 76                                             
+unrelated           1: 16                                             
+until               2: 12 97                                          
+untouched           1: 77                                             
+up                  7: 8 12 39 52 61 66 99                            
+upcoming            1: 68                                             
+upon                1: 58                                             
+us                  6: 12 14 30 34 39 63                              
+used                2: 30 63                                          
+useless             1: 72                                             
+using               1: 14                                             
+utilized            1: 16                                             
+V
+various             1: 32                                             
+very                2: 1 2                                            
+video               2: 61 74                                          
+viewpoint           1: 39                                             
+visual              1: 72                                             
+W
+wage                1: 63                                             
+walls               1: 6                                              
+wanted              1: 32                                             
+war                 2: 12 63                                          
+warm                3: 30 89                                          
+was                 25: 6 25 28 37 48 52 65 66 68 72 74 76 77 87 89 97 99 100
+wasn't              2: 30                                             
+water               4: 39 43 89                                       
+way                 4: 30 43 59 61                                    
+we                  22: 6 12 14 16 22 39 74                           
+weakened            1: 91                                             
+weapons             2: 14 63                                          
+weather             2: 16 32                                          
+well                2: 43 52                                          
+were                21: 4 6 8 12 14 16 28 32 34 37 39 43 59 63 66 76 77 99
+what                5: 30 52 83 89 102                                
+what's              1: 76                                             
+when                3: 30 39 102                                      
+whenever            1: 61                                             
+which               3: 37 43 102                                      
+while               1: 102                                            
+white               3: 46 52 76                                       
+who                 1: 63                                             
+why                 2: 30 43                                          
+widasdasdasdasdads  1: 116                                            
+will                10: 12 32 39 52 76 111 112                        
+win                 2: 12 30                                          
+winds               1: 89                                             
+winning             2: 12                                             
+with                17: 12 14 32 37 39 52 68 72 76 80 86 105          
+within              3: 8 61 68                                        
+word                2: 30 102                                         
+words               1: 26                                             
+work                1: 12                                             
+worth               1: 21                                             
+would               3: 14 28 32                                       
+wrapping            1: 43                                             
+wrong               1: 59                                             
+Y
+years               1: 12                                             
+yet                 2: 82 109                                         
+younger             1: 28                                             
+your                1: 30                                             

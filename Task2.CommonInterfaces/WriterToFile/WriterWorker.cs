@@ -22,9 +22,9 @@ namespace Task2.Contracts.WriterToFile
             }
         }
 
-        public static void WriteSubjectIndexForSentences(List<string> list)
+        public static void WriteSubjectIndexForSentences(List<string> list, string path)
         {
-            using (StreamWriter sw = new StreamWriter("../testSubjectIndexForSentences.txt", false, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
             {
                 foreach (var item in list)
                 {
@@ -33,16 +33,16 @@ namespace Task2.Contracts.WriterToFile
             }
         }
 
-        public static void WriteSubjectIndexForPages(List<string> list)
-        {
-            using (StreamWriter sw = new StreamWriter("../testSubjectIndexForPages.txt", false, System.Text.Encoding.Default))
-            {
-                foreach (var item in list)
-                {
-                    sw.WriteLine(item);
-                }
-            }
-        }
+        //public static void WriteSubjectIndexForPages(List<string> list)
+        //{
+        //    using (StreamWriter sw = new StreamWriter("../testSubjectIndexForPages.txt", false, System.Text.Encoding.Default))
+        //    {
+        //        foreach (var item in list)
+        //        {
+        //            sw.WriteLine(item);
+        //        }
+        //    }
+        //}
 
         public static void WriteAllInterrogativeSentence(IText text)
         {
