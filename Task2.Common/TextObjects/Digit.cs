@@ -3,22 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Task2.CommonClasses.ParserHelpers;
 using Task2.Contracts.Interfaces;
 using Task2.Contracts.Structs;
 
-namespace Task2.CommonClasses.Classes
+namespace Task2.CommonClasses.TextObjects
 {
-    public class PunctuationMark : IPunctuationMark
+    public class Digit : IDigit
     {
-        public bool IsEndMark()
-        {
-            return !PunctuationMarksConstants.EndSentenceMarks.Contains(Value);
-        }
-
         public string Value { get; private set; }
 
-        public PunctuationMark(string value)
+        public  Digit(string value)
         {
             Value = value;
         }

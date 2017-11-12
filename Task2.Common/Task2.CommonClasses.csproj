@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="ParserObjects\Parser.cs" />
     <Compile Include="TextAnalyzer\TextAnalyzer.cs" />
+    <Compile Include="TextObjects\Digit.cs" />
     <Compile Include="TextObjects\PunctuationMark.cs" />
     <Compile Include="TextObjects\Sentence.cs" />
     <Compile Include="TextObjects\Text.cs" />
