@@ -18,21 +18,21 @@ namespace Task2
 
             Parser myParser = new Parser();
             IText text = new CommonClasses.TextObjects.Text();
-            text = myParser.ParseText(@"..\test.txt");
+            text = myParser.ParseText(@"..\testToEdit.txt");
 
             ITextAnalyzer textAnalyzer = new TextAnalyzer(text.FindAllWords());
 
-            IText textForSubjectIndex = myParser.ParseTextForTask2(@"../test.txt");
 
             //WriterWorker.WriteSubjectIndex(textAnalyzer.ToPrintList());
             //WriterWorker.WriteAllTextAscByNumberOfWords(text);
             //WriterWorker.WriteAllInterrogativeSentence(text);
             //WriterWorker.WriteAllWordsInInterrogativeSentences(text, 5);
             //WriterWorker.WriteTextWithoutWordOfSetLength(text, 4);
-            //WriterWorker.WriteSentenceThatReplacedWordToSubstring(text, 0, 3, "this is new replaced, reddit did it not me");
+            WriterWorker.WriteSentenceThatReplacedWordToSubstring(text: text,index: 0, lenght: 4, subString: "dasdasdasd");
 
-            ITextAnalyzer textAnalyzerForLines = new TextAnalyzer(textForSubjectIndex.FindAllWords(), 10);
-            WriterWorker.WriteSubjectIndexForPages(textAnalyzerForLines.ToPrintListForPages());
+            //IText textForSubjectIndex = myParser.ParseTextForTask2(@"../test.txt");
+            //ITextAnalyzer textAnalyzerForLines = new TextAnalyzer(textForSubjectIndex.FindAllWords(), 10);
+            //WriterWorker.WriteSubjectIndexForPages(textAnalyzerForLines.ToPrintListForPages());
         }
     }
 }

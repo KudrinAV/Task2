@@ -80,7 +80,7 @@ namespace Task2.CommonClasses.WriterToFile
         {
             using (StreamWriter sw = new StreamWriter("../testReplacedWordToSubString.txt", false, System.Text.Encoding.Default))
             {
-                sw.WriteLine(text.GetTheSentenceToReplaceWordOnSubString(index, 3, subString));
+                sw.WriteLine(text.GetTheSentenceToReplaceWordOnSubString(index, lenght, subString));
             }
         } 
     }
