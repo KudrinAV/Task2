@@ -7,7 +7,7 @@ using Task2.CommonClasses.ParserHelpers;
 using Task2.Contracts.Interfaces;
 using Task2.Contracts.Structs;
 
-namespace Task2.CommonClasses.Classes
+namespace Task2.CommonClasses.TextObjects
 {
     public class PunctuationMark : IPunctuationMark
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Task2.Contracts.Interfaces;
 using Task2.Contracts.Structs;
 
-namespace Task2.CommonClasses.Classes
+namespace Task2.CommonClasses.TextObjects
 {
     public class Word : IWord
     {
