@@ -39,11 +39,6 @@ namespace Task2.CommonClasses.TextObjects
             return sort;
         }
 
-        public Text()
-        {
-            Sentences = new List<ISentence>();
-        }
-
         public Text(List<ISentence> sentences)
         {
             Sentences = sentences;
