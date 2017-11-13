@@ -8,8 +8,8 @@ namespace Task2.Contracts.Structs
 {
     public struct Pair
     {
-        int CountOnText { get; set; }
-        int[] OnWhichLinesMentioned { get; set; }
+        public int CountOnText { get; private set; }
+        public int[] OnWhichLinesMentioned { get; private set; }
 
         public Pair(int count, int[] mentions)
         {

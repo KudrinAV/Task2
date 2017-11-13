@@ -8,7 +8,7 @@ namespace Task2.Contracts.Structs
 {
     public struct Symbol
     {
-        public Char[] Chars { get; set; }
+        public Char[] Chars { get; private set; }
 
         public Symbol(string chars)
         {
