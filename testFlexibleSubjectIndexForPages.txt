@@ -35,6 +35,8 @@ appropriate         3: 4 9
 are                 6: 1 2 4                                          
 around              2: 5 6                                            
 as                  12: 2 4 5 6 8 10                                  
+asda                1: 13                                             
+asdada              1: 13                                             
 at                  9: 2 4 5 7 8 10 11                                
 attempt             1: 4                                              
 available           2: 6 8                                            
@@ -123,8 +125,12 @@ crisp               1: 8
 crumbling           1: 11                                             
 crush               1: 2                                              
 D
+dadas               1: 13                                             
+dadasdas            1: 13                                             
 damage              1: 5                                              
 damaged             1: 8                                              
+dasdadsa            1: 13                                             
+dasdasda            1: 13                                             
 data                8: 4 6 7 11                                       
 database            1: 1                                              
 days                18: 1 4 5 6 7 8 9 10 11                           

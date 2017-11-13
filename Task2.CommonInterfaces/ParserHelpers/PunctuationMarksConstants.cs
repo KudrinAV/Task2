@@ -10,6 +10,6 @@ namespace Task2.CommonClasses.ParserHelpers
     {
         public static string[] EndSentenceMarks = { ".", "?", "!", "!?", "?!", "...", "!!!", "???" };
 
-        public static string[] AllSentenceMarks = { "...", "!!!", "???", "\"", ".", "?", "!", "!?", "?!", "'", ",", ";", ":", "[", "(", "{", "]", ")", "}", "~", ":" };
+        public static string[] AllSentenceMarks = { "...", "!!!", "???", "\"", ".", "?", "!", "!?", "?!", ",", ";", ":", "[", "(", "{", "]", ")", "}", "~", "-", "'"};
     }
 }

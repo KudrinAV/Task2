@@ -15,9 +15,9 @@ namespace Task2.CommonClasses.ParserObj
 {
     public class Parser : IParser
     {
-        private Regex _lineToSentences = new Regex(@"([\w\s-,'~:\(\)\""]+[\.\?!]{1,3})");
+        private Regex _lineToSentences = new Regex(@"([\w\s-,'~:;\[\]\(\)\{\}]+[\.\?!]{1,3})");
 
-        private Regex _sentenceToElements = new Regex(@"(\[)|([\w']+)|([\d]+)|(\"")|(,)|(])|(~)|([\.\!\?]{3})|([\!\?]{2})|([\.\!\?]{1})|(:)");
+        private Regex _sentenceToElements = new Regex(@"(\[)|([\w']+)|([\d]+)|(\"")|(,)|([\[\]\(\)\{\}])|([,-:~;']{1})|([\.\!\?]{1,3})");
 
 
         public ISentence ParseSentence(string sentence)
@@ -26,7 +26,8 @@ namespace Task2.CommonClasses.ParserObj
 
             Func<string, ISentenceElement> toISentenceElement =
                 item => !PunctuationMarksConstants.AllSentenceMarks.Contains(item) && !DigitConstants.Digits.Contains(item.First().ToString()) ? (ISentenceElement)new Word(item) 
-                : !PunctuationMarksConstants.AllSentenceMarks.Contains(item) ? (ISentenceElement)new Digit(item)  : (ISentenceElement)new PunctuationMark(item);
+                                                                                : !PunctuationMarksConstants.AllSentenceMarks.Contains(item) ? (ISentenceElement)new Digit(item)  
+                                                                                                                                : (ISentenceElement)new PunctuationMark(item);
 
             foreach (Match item in _sentenceToElements.Matches(sentence))
             {
