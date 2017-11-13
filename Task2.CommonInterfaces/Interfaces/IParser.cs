@@ -10,8 +10,8 @@ namespace Task2.Contracts.ParserInterfaces
 {
     public interface IParser
     {
-        IText ParseText(string path);
+        List<ISentence> ParseText(string path);
         ISentence ParseSentence(string sentence);
-        IText ParseTextForTask2(string path);
+        List<ISentence> ParseTextForTask2(string path);
     }
 }

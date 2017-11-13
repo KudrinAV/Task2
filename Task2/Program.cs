@@ -17,8 +17,7 @@ namespace Task2
         {
 
             Parser myParser = new Parser();
-            IText text = new CommonClasses.TextObjects.Text();
-            text = myParser.ParseText(@"..\textEdited.txt");
+            IText text = new CommonClasses.TextObjects.Text(myParser.ParseText(@"..\textEdited.txt"));
 
             //Task 1
 

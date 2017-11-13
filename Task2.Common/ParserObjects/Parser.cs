@@ -38,9 +38,9 @@ namespace Task2.CommonClasses.ParserObj
         }
 
 
-        public IText ParseText(string path)
+        public List<ISentence> ParseText(string path)
         {
-            IText resultText = new Text();
+            List<ISentence> resultText = new List<ISentence>();
             string line;
             string notFinishedSentence = null;
 
@@ -58,12 +58,12 @@ namespace Task2.CommonClasses.ParserObj
 
                             if (sentences.Last() != string.Empty)
                             {
-                                resultText.Sentences.AddRange(sentences.Where(x => x != sentences.Last() && x != string.Empty).Select(ParseSentence));
+                                resultText.AddRange(sentences.Where(x => x != sentences.Last() && x != string.Empty).Select(ParseSentence));
                                 notFinishedSentence = sentences.Last();
                             }
                             else
                             {
-                                resultText.Sentences.AddRange(sentences.Where(x => x != string.Empty).Select(ParseSentence));
+                                resultText.AddRange(sentences.Where(x => x != string.Empty).Select(ParseSentence));
                                 notFinishedSentence = null;
                             }
                         }
@@ -77,9 +77,9 @@ namespace Task2.CommonClasses.ParserObj
             return resultText;
         }
 
-        public IText ParseTextForTask2(string path)
+        public List<ISentence> ParseTextForTask2(string path)
         {
-            IText resultText = new Text();
+            List<ISentence> resultText = new List<ISentence>();
             string line;
 
             using (StreamReader streamReader = new StreamReader(path))
@@ -89,8 +89,8 @@ namespace Task2.CommonClasses.ParserObj
                     int indexOfLine = 0;
                     while ((line = streamReader.ReadLine()) != null)
                     {
-                        resultText.Sentences.Add(ParseSentence(line));
-                        resultText.Sentences.Last().SetIndexOfLine(indexOfLine);
+                        resultText.Add(ParseSentence(line));
+                        resultText.Last().SetIndexOfLine(indexOfLine);
                         indexOfLine++;
                     }
                 }
